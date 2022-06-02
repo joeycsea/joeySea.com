@@ -4,9 +4,168 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>🌸 Joey Sea</title>
+      <title>Joey Sea ✨</title>
+
+      <!-- ==== Font Awesome ==== -->
+      <script src="https://kit.fontawesome.com/1686cdb2e3.js" crossorigin="anonymous"></script>
+      <!-- === Devicon Icons ===-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
    </head>
    <body>
+      <!-- === Nav Bar === -->
+      <nav>
+         <div class="wrapper">
+            <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <nav class="hamburgerMenu">
+         <i class="fa-solid fa-bars"></i>
+      </nav>
+
+      <header>
+         <div class="wrapper">
+            <h1>Hello! I'm Joey Sea ( <i class="fa-brands fa-js"></i> ) </h1>
+            <h2>Frontend Web Developer</h2>
+         </div>
+      </header>
+      
+      <!-- === About Section === -->
+      <main>
+         <section class="about" id="about">
+            <div class="wrapper">
+               <h2>About Me</h2>
+               <img src="./assets/joeysea.jpeg" alt="photo of Joey Sea">
+               
+               <div class="aboutRight">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio, facilis quod rem repellat possimus explicabo unde quibusdam quia perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quidem corrupti, facilis laborum quasi vitae cumque nobis officia iusto deleniti saepe mollitia laudantium voluptate illo unde ullam necessitatibus vero neque alias accusantium. Veritatis odit nisi a pariatur fugiat aliquam consequuntur.</p>
+
+                  <p>Things I Love</p>
+                  <i class="fa-solid fa-person-hiking"></i>
+                  <i class="fa-solid fa-palette"></i>
+                  <i class="fa-solid fa-pen-fancy"></i>
+               </div>
+            </div>  
+         </section> 
+
+         <!--  === Skills Section === -->
+         <section class="skills" id="skills">
+            <div class="wrapper">
+               <h2>My Skills</h2>
+               <ul>
+                  <li>
+                     <i class="fa-brands fa-html5"></i>
+                     <p>HTML5</p>
+                  </li>
+                  <li>
+                     <i class="devicon-css3-plain"></i>
+                     <p>CSS3</p>
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-sass"></i> 
+                     <p>Sass</p>
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-js"></i> 
+                     <p>JavaScript</p>
+                  </li>
+                  <li>
+                     <i class="devicon-jquery-plain"></i>
+                     <p>jQuery</p>
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-react"></i>
+                     <p>React</p>
+                  </li>
+                  <li>
+                     <i class="devicon-firebase-plain"></i>
+                     <p>Firebase</p>
+                  </li>
+                  <li>
+                     <i class="fa-brands fa-github"></i>
+                     <p>GitHub</p>
+                  </li>
+                  <li>
+                     <i class="fa-solid fa-laptop-code"></i>
+                     <p>Responsive Design</p>
+                  </li>
+                  <li>
+                     <i class="fa-solid fa-universal-access"></i>
+                     <p>Accessibility</p>
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- === Projects Section === -->
+         <section class="projects" id="projects">
+            <div class="wrapper">
+               <h2>Projects</h2>
+
+               <div class="projectTwo">
+                  <img src="" alt="">
+                  <h3>$HOW ME THE MONEY!</h3>
+                  <ul class="skillsFlex">
+                     <li>HTML</li>
+                     <li>SCSS</li>
+                     <li>JavaScript</li>
+                     <li>Pair-Programming</li>
+                     <li>Rest API</li>
+                  </ul>
+                  <div class="projectText">
+                     <p>Created an app through pair programming to allow users to exchange their base currency with any chosen foreign currency. Created and designed by myself and Karleen Estanislao</p>
+                  </div>
+                  <div class="projectLinks">
+                     <a href="https://delightful-gingersnap-d0f5d7.netlify.app/">Live Site</a>
+                     <a href="https://github.com/karleenAndJoey/showMeTheMoneyApp">GitHub Repo</a>
+                  </div>
+               </div>
+
+               <div class="projectOne">
+                  <img src="" alt="">
+                  <h3>Bar-One</h3>
+                  <ul class="skillsFlex">
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>SCSS</li>
+                  </ul>
+                  <div class="projectText">
+                     <p>Was provided a PSD design to convert into a multi-page, functional and responsive website.</p>
+                  </div>
+                  <div class="projectLinks">
+                     <a href="https://joey-sea-bar-one-project-one.netlify.app/">Live Site</a>
+                     <a href="https://github.com/joeycsea/joeySeaProjectOne">GitHub Repo</a>
+                  </div>
+               </div>
+
+               <div class="assignmentOne">
+                  <img src="" alt="">
+                  <h3>Shutter</h3>
+                  <ul class="skillsFlex">
+                     <li>HTML</li>
+                     <li>CSS</li>
+                     <li>CodePen</li>
+                  </ul>
+                  <div class="projectText">
+                     <p>Was provided a PSD design to convert into a multi-page, functional and responsive website.</p>
+                  </div>
+                  <div class="projectLinks">
+                     <a href="https://codepen.io/joeysea/full/mdpgWzz">CodePen</a>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+
+      </main>
+
       <script src="./script.js"></script>
    </body>
 </html>
