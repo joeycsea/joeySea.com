@@ -281,8 +281,7 @@ h1, h2, h3 {
 
 h2 {
   color: white;
-  font-size: 2rem;
-  margin-bottom: 50px;
+  font-size: 2.75rem;
 }
 
 p, a, li {
@@ -307,11 +306,13 @@ img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {
   max-width: 1200px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -370,9 +371,10 @@ nav a:focus {
 }
 
 header {
-  height: 120vh;
+  height: 100vh;
   background-image: url("../assets/beigeBackground.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: -10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,9 +384,12 @@ header {
   text-align: center;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
 #home h1, #home h2 {
   color: #5f5a6d;
-  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +402,7 @@ header {
           justify-content: center;
   position: relative;
   top: 300px;
-  left: 90px;
+  left: 125px;
   text-align: left;
 }
 
@@ -406,34 +411,34 @@ header {
 }
 
 .headerImg {
-  height: 30%;
-  width: 45%;
-  -webkit-box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  height: 500px;
+  width: 800px;
   -webkit-transform: scale(0.9, 0.9) rotate(3deg);
           transform: scale(0.9, 0.9) rotate(3deg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
   position: relative;
   top: 20vh;
   right: 100px;
-}
-
-.headerImg img {
-  border: 20px solid white;
+  background: url("../assets/petolake.jpeg") no-repeat;
+  background-size: contain;
 }
 
 .headerImg:hover,
 .headerImg:focus {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  background: url("../assets/beehive.jpg") no-repeat;
+  background-size: contain;
 }
 
-.about .wrapper {
-  background-color: #5f5a6d;
-  padding: 100px;
-  position: relative;
-  top: -130px;
+.about {
+  background-color: #ae8b93;
+  padding: 100px 0;
+  border-bottom: 10px solid white;
+}
+.about h2 {
+  padding-bottom: 50px;
 }
 
 .aboutContainer {
@@ -450,7 +455,7 @@ header {
 
 .aboutContainer img {
   width: 30%;
-  border: 6px solid white;
+  border-radius: 50%;
 }
 
 .aboutRight {
@@ -460,7 +465,13 @@ header {
 
 .aboutRight p {
   color: white;
-  padding-left: 30px;
+  padding-left: 75px;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.aboutRight a {
+  color: #f4bbc2;
 }
 
 .aboutRight ul {
@@ -474,14 +485,17 @@ header {
 }
 
 .aboutRight i {
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: white;
+  padding-left: 75px;
 }
 
-.skills .wrapper {
-  background-color: #d0a8b1;
-  padding: 100px;
-  margin-top: -6rem;
+.skills {
+  background-color: #5f5a6d;
+  padding: 100px 0;
+}
+.skills h2 {
+  padding-bottom: 50px;
 }
 
 .skillsFlex ul {
@@ -493,29 +507,138 @@ header {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20px;
-  padding: 10px;
   color: #5f5a6d;
+  text-align: center;
+}
+
+.skillsFlex li {
+  margin: 30px 40px;
 }
 
 .skillsFlex i {
   font-size: 3rem;
   color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.skillsFlex i:hover,
+.skillsFlex i:focus {
+  color: #ae8b93;
 }
 
 .skillsFlex p {
-  font-size: 1.75rem;
-  color: #5f5a6d;
+  font-size: 1.3rem;
+  color: white;
 }
 
-.projects .wrapper {
+.projects {
+  background-color: #d0a8b1;
+  padding: 100px 0;
+  margin-top: 0.5rem;
+}
+.projects h2, .projects h3, .projects p, .projects li {
+  color: white;
+}
+
+.projectTwo, .projectOne, .assignmentOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 10px;
+}
+
+.projects a {
+  margin: 10px;
+  padding: 20px;
+}
+
+.projectLinks a:hover,
+.projectLinks a:focus {
+  color: #f2f1f6;
+}
+
+.projectWords {
+  margin-left: 50px;
+  width: calc(60% - 20px);
+}
+
+.projectPic {
+  width: calc(40% - 20px);
+}
+
+.projectPic img {
+  border-radius: 30px;
+}
+
+.gallery {
   background-color: #dad9e1;
-  padding: 100px;
+  padding: 100px 0;
   margin-top: 0.5rem;
 }
 
-.gallery .wrapper {
+.gallery h2 {
+  color: #5f5a6d;
+  margin-bottom: 30px;
+}
+
+.artseaLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.artseaLogo img {
+  border-radius: 50%;
+}
+
+.artseaLogo a {
+  padding: 15px;
+}
+
+.artseaLogo a:hover,
+.artseaLogo a:focus {
+  color: #ae8b93;
+}
+
+.gallery img {
+  width: 300px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  margin: 20px;
+}
+
+.galleryImgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.contact {
   background-color: #ae8b93;
-  padding: 100px;
   margin-top: 0.5rem;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 50px;
+  padding: 100px 0;
 }

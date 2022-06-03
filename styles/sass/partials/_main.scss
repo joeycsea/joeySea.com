@@ -15,11 +15,12 @@ img {
    height: auto;
    display: block;
    object-fit: cover;
+   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.3);
 }
 
 .wrapper {
    max-width: 1200px;
-   width: 95%;
+   width: 90%;
    margin: 0 auto;
 }
 
@@ -76,24 +77,28 @@ nav a:focus {
 
 // Header styles
 header {
-   height: 120vh;
+   height: 100vh;
    background-image: url("../assets/beigeBackground.jpg");
    background-repeat: no-repeat;
+   background-size: cover;
    z-index: -10;
    display: flex;
    justify-content: space-around;
    text-align: center;
 }
 
+h1 {
+   font-size: 4rem;
+}
+
 #home h1, #home h2 {
    color: $fifth;
-   font-size: 2.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
    position: relative;
    top: 300px;
-   left: 90px;
+   left: 125px;
    text-align:left;
 }
 
@@ -101,31 +106,32 @@ header {
    font-size: 2rem;
 }
 .headerImg {
-   height: 30%;
-   width: 45%;
-   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+   height: 500px;
+   width: 800px;
    transform: scale(0.9, 0.9) rotate(3deg);
-   transition: 0.3s;
+   transition: 1s;
    position: relative;
    top: 20vh;
    right: 100px;
-}
-
-.headerImg img {
-   border: 20px solid white;
+   background: url("../assets/petolake.jpeg") no-repeat;
+   background-size: contain;
 }
 
 .headerImg:hover,
 .headerImg:focus {
    transform: rotate(0deg);
+   background: url("../assets/beehive.jpg") no-repeat;
+   background-size: contain;
 }
 
 // About styles
-.about .wrapper {
-   background-color: $fifth;
-   padding: 100px;
-   position: relative;
-   top: -130px;
+.about  {
+   background-color: $third;
+   padding: 100px 0;
+   border-bottom: 10px solid white;
+   h2 {
+      padding-bottom: 50px;
+   }
 }
 
 .aboutContainer {
@@ -136,7 +142,8 @@ header {
 
 .aboutContainer img {
    width: 30%;
-   border: 6px solid white;
+   // border: 6px solid white;
+   border-radius: 50%;;
 }
 
 .aboutRight {
@@ -146,7 +153,13 @@ header {
 
 .aboutRight p {
    color: white;
-   padding-left: 30px;
+   padding-left: 75px;
+   letter-spacing: 1px;
+   font-size: 0.9rem;
+}
+
+.aboutRight a {
+   color: $first;
 }
 
 .aboutRight ul {
@@ -156,46 +169,143 @@ header {
 }
 
 .aboutRight i {
-   font-size: 2.8rem;
+   font-size: 2rem;
    color: white;
+   padding-left: 75px;
 }
 
 //  Skills styles
-.skills .wrapper {
-   background-color: $second;
-   padding: 100px;
-   margin-top: -6rem;
+.skills  {
+   background-color: $fifth;
+   padding: 100px 0;
+   h2 {
+      padding-bottom: 50px;
+   }
 }
 
 .skillsFlex ul {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   margin: 20px;
-   padding: 10px;
    color: $fifth;
+   text-align: center;
+}
+
+.skillsFlex li {
+   margin: 30px 40px;
 }
 
 .skillsFlex i {
    font-size: 3rem;
    color: white;
+   transition: 0.3s;
+   text-align: center;
+}
+
+   .skillsFlex i:hover,
+   .skillsFlex i:focus {
+   color: $third;
 }
 
 .skillsFlex p {
-   font-size: 1.75rem;
-   color: $fifth;
+   font-size: 1.3rem;
+   color: white;
 }
 
 // Projects styles
-.projects .wrapper {
+.projects {
+   background-color: $second;
+   padding: 100px 0;
+   margin-top: 0.5rem;
+   h2, h3, p, li  {
+      color: white;
+   }
+}
+
+.projectTwo, .projectOne, .assignmentOne {
+   display: flex;
+   padding: 50px 10px;
+}
+
+.projects a {
+   margin: 10px;
+   padding: 20px;
+}
+.projectLinks a:hover,
+.projectLinks a:focus {
+   color: $sixth;
+}
+
+.projectWords {
+   margin-left: 50px;
+   width: calc(60% - 20px);
+}
+
+.projectPic {
+   width: calc(40% - 20px);
+}
+
+.projectPic img {
+   border-radius: 30px;
+   // border: 2px solid white;
+}
+
+
+//  Gallery styles
+.gallery  {
    background-color: $fourth;
-   padding: 100px;
+   padding: 100px 0;
    margin-top: 0.5rem;
 }
 
-//  Gallery styles
-.gallery .wrapper {
+.gallery h2 {
+   color: $fifth;
+   margin-bottom: 30px;
+}
+
+.artseaLogo {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100px;
+   height: 100px;
+}
+
+.artseaLogo img {
+   border-radius: 50%;
+}
+
+.artseaLogo a {
+   padding: 15px;
+}
+
+.artseaLogo a:hover,
+.artseaLogo a:focus {
+   color: $third;
+}
+
+.gallery img {
+   width: 300px;
+   flex-basis: 25%;
+   margin: 20px;
+}
+
+.galleryImgs {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   border-radius: 10px;
+}
+
+// Contact styles
+.contact  {
    background-color: $third;
-   padding: 100px;
    margin-top: 0.5rem;
+}
+
+.contact h2 {
+   color: white;
+   margin-bottom: 50px;
+   padding: 100px 0;
 }
