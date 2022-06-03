@@ -10,16 +10,21 @@
       <script src="https://kit.fontawesome.com/1686cdb2e3.js" crossorigin="anonymous"></script>
       <!-- === Devicon Icons ===-->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+      <!--  === Google Fonts === -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet"> 
+      <!-- === Linking Style Sheet === -->
+      <link rel="stylesheet" href="./styles/style.css">
    </head>
+
    <body>
+      <!-- === Skip link === -->
+      <a href="#about" class="skip-link">Skip to Content</a>
       <!-- === Nav Bar === -->
       <nav>
          <div class="wrapper">
-            <ul class="logo">
-               <li><a href="#home"></a>Joey</li>
-            </ul>
-            <ul class="navRight">
+            <ul>
                <li><a href="#home">Home</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#skills">Skills</a></li>
@@ -29,14 +34,13 @@
          </div>
       </nav>
 
-      <nav class="hamburgerMenu">
-         <i class="fa-solid fa-bars"></i>
-      </nav>
-
       <header>
-         <div class="wrapper">
-            <h1>Hi there, I'm Joey Sea</h1>
-            <h2>Fron-end Web Developer</h2>
+         <div class="wrapper" id="home">
+            <h1>Joey Sea</h1>
+            <h2>Front-End Web Developer</h2>
+         </div>
+         <div class="headerImg">
+            <img src="./assets/petolake.jpeg" alt="woman overlooking Peto Lake in Banff, Alberta">
          </div>
       </header>
       
@@ -45,73 +49,90 @@
          <section class="about" id="about">
             <div class="wrapper">
                <h2>About Me</h2>
-               <img src="./assets/joeysea.jpeg" alt="photo of Joey Sea">
-               
-               <div class="aboutRight">
-                  <p>
-                     I'm Joey, my pronouns are she/her and I'm a Toronto-based Front-End Web Developer. My 5+ years of experience in banking operations and launching my own art business, <a href="https://www.etsy.com/ca/shop/MissArtsea">MissArtsea</a> has allowed me to excel at logical thinking, creative problem-solving and improving the client experience (with web accessibilty in mind!).  I am currently a student of Juno College of Technology's Web Development Immersive Bootcamp and I have a BAA degree from Wilfrid Laurier University. 
-                     <br>
-                     When I'm not coding, you can find me enjoying my many interests listed below:
-                  </p>
-                  <ul>
-                     <li><i class="fa-solid fa-spa"></i></li>
-                     <li><i class="fa-solid fa-palette"></i></li>
-                     <li><i class="fa-solid fa-pen-fancy"></i></li>
-                     <li><i class="fa-brands fa-pagelines"></i></li> <!-- plant children-->
-                     <li><i class="fa-solid fa-earth-americas"></i></li>
-                  </ul>
-                  
-                  
+               <div class="aboutContainer">
+                  <img src="./assets/joeysea.jpeg" alt="photo of Joey Sea">
+                  <div class="aboutRight">
+                     <p>
+                        I'm Joey, my pronouns are she/her and I'm a Toronto-based Front-End Web Developer. My 5+ years of experience in banking operations and launching my own art business, <a href="https://www.etsy.com/ca/shop/MissArtsea">MissArtsea</a>, has allowed me to excel at logical thinking, creative problem-solving and improving the client experience (with web accessibilty in mind!). 
+                        <br>
+                        <br>
+                        When I'm not coding, you can find me enjoying my many interests listed below:
+                     </p>
+                     <ul>
+                        <li>
+                           <i class="fa-solid fa-spa"></i>
+                           <p>Yoga</p>
+                        </li>
+                        <li>
+                           <i class="fa-solid fa-palette"></i>
+                           <p>Watercolor Painting</p>
+                        </li>
+                        <li>
+                           <i class="fa-solid fa-pen-fancy"></i>
+                           <p>Calligraphy</p>                           
+                        </li>
+                        <li>
+                           <i class="fa-brands fa-pagelines"></i>
+                           <p>Taking care of my plant children</p>
+                        </li>
+                        <li>
+                           <i class="fa-solid fa-earth-americas"></i>
+                           <p>Travelling</p>
+                        </li>
+                     </ul>
+                  </div>
                </div>
-            </div>  
+            </div>
          </section> 
 
          <!--  === Skills Section === -->
          <section class="skills" id="skills">
             <div class="wrapper">
                <h2>My Skills</h2>
-               <ul>
-                  <li>
-                     <i class="fa-brands fa-html5"></i>
-                     <p>HTML5</p>
-                  </li>
-                  <li>
-                     <i class="devicon-css3-plain"></i>
-                     <p>CSS3</p>
-                  </li>
-                  <li>
-                     <i class="fa-brands fa-sass"></i> 
-                     <p>Sass</p>
-                  </li>
-                  <li>
-                     <i class="fa-brands fa-js"></i> 
-                     <p>JavaScript</p>
-                  </li>
-                  <li>
-                     <i class="devicon-jquery-plain"></i>
-                     <p>jQuery</p>
-                  </li>
-                  <li>
-                     <i class="fa-brands fa-react"></i>
-                     <p>React</p>
-                  </li>
-                  <li>
-                     <i class="devicon-firebase-plain"></i>
-                     <p>Firebase</p>
-                  </li>
-                  <li>
-                     <i class="fa-brands fa-github"></i>
-                     <p>GitHub</p>
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-laptop-code"></i>
-                     <p>Responsive Web Design</p>
-                  </li>
-                  <li>
-                     <i class="fa-solid fa-universal-access"></i>
-                     <p>Web Accessibility</p>
-                  </li>
-               </ul>
+               <div class="skillsFlex">
+                  <ul>
+                     <li>
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                     </li>
+                     <li>
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS3</p>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-sass"></i> 
+                        <p>Sass</p>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-js"></i> 
+                        <p>JavaScript</p>
+                     </li>
+                     <li>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                     </li>
+                     <li>
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                     </li>
+                     <li>
+                        <i class="fa-brands fa-github"></i>
+                        <p>GitHub</p>
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>Responsive Design</p>
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p>Accessibility</p>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </section>
 
@@ -121,72 +142,94 @@
                <h2>Projects</h2>
 
                <div class="projectTwo">
-                  <img src="" alt="">
-                  <h3>$HOW ME THE MONEY!</h3>
-                  <ul class="skillsFlex">
-                     <li>HTML</li>
-                     <li>SCSS</li>
-                     <li>JavaScript</li>
-                     <li>Pair-Programming</li>
-                     <li>Rest API</li>
-                  </ul>
-                  <div class="projectText">
-                     <p>Created a currency exchange app through pair programming. Created and designed by myself and Karleen Estanislao.</p>
+                  <div class="projectPic">
+                     <img src="" alt="">
                   </div>
-                  <div class="projectLinks">
-                     <a href="https://delightful-gingersnap-d0f5d7.netlify.app/">Live Site</a>
-                     <a href="https://github.com/karleenAndJoey/showMeTheMoneyApp">GitHub Repo</a>
+                  <div class="projectWords">
+                     <h3>$HOW ME THE MONEY!</h3>
+                     <ul class="skillsFlex">
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>JavaScript</li>
+                        <li>Pair-Programming</li>
+                        <li>Rest API</li>
+                     </ul>
+                     <div class="projectText">
+                        <p>Created a currency exchange app through pair programming. Created and designed by myself and Karleen Estanislao.</p>
+                     </div>
+                     <div class="projectLinks">
+                        <a href="https://delightful-gingersnap-d0f5d7.netlify.app/">Live Site</a>
+                        <a href="https://github.com/karleenAndJoey/showMeTheMoneyApp">GitHub Repo</a>
+                     </div>
                   </div>
                </div>
 
                <div class="projectOne">
-                  <img src="" alt="">
-                  <h3>Bar-One</h3>
-                  <ul class="skillsFlex">
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>SCSS</li>
-                  </ul>
-                  <div class="projectText">
-                     <p>Was provided a PSD design to convert into a multi-page, functional and responsive website.</p>
+                  <div class="projectPic">
+                     <img src="" alt="">
                   </div>
-                  <div class="projectLinks">
-                     <a href="https://joey-sea-bar-one-project-one.netlify.app/">Live Site</a>
-                     <a href="https://github.com/joeycsea/joeySeaProjectOne">GitHub Repo</a>
+                  <div class="projectWords">
+                     <h3>Bar-One</h3>
+                     <ul class="skillsFlex">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                     </ul>
+                     <div class="projectText">
+                        <p>Was provided a PSD design to convert into a multi-page, functional and responsive website.</p>
+                     </div>
+                     <div class="projectLinks">
+                        <a href="https://joey-sea-bar-one-project-one.netlify.app/">Live Site</a>
+                        <a href="https://github.com/joeycsea/joeySeaProjectOne">GitHub Repo</a>
+                     </div>
                   </div>
                </div>
 
                <div class="assignmentOne">
-                  <img src="" alt="">
-                  <h3>Shutter</h3>
-                  <ul class="skillsFlex">
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>CodePen</li>
-                  </ul>
-                  <div class="projectText">
-                     <p>Was provided a PSD design to convert into a multi-page, functional and responsive website.</p>
+                  <div class="projectPic">
+                     <img src="" alt="">
                   </div>
-                  <div class="projectLinks">
-                     <a href="https://codepen.io/joeysea/full/mdpgWzz">CodePen</a>
+                  <div class="projectWords">
+                     <h3>Shutter</h3>
+                     <ul class="skillsFlex">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>CodePen</li>
+                     </ul>
+                     <div class="projectText">
+                        <p>Was provided a PSD design to convert into a multi-page, functional and responsive website on CodePen.</p>
+                     </div>
+                     <div class="projectLinks">
+                        <a href="https://codepen.io/joeysea/full/mdpgWzz">CodePen</a>
+                     </div>
                   </div>
                </div>
-            </div>
+            </div>  <!-- end of warpper-->
          </section>
       </main>
 
-      <!-- === Photo Gallery -->
+      <!-- === Photo Gallery === -->
       <section class="gallery">
          <div class="wrapper">
+            <h2>MissArtsea Gallery</h2>
+            <p>
+               <a href="https://www.instagram.com/missartsea/?hl=en"><i class="fa-brands fa-instagram">Follow Me @MissArtsea!</i></a>
+            </p>
             <img src="./assets/calligraphy.jpg" alt="black calligraphy ink on white paper">
-            <img src="./assets/petolake.jpeg" alt="on top of Peto Lake in Banff, Alberta">
-            <img src="./assets/painting.jpeg" alt="watercolour painting of a burst of colorful flowers">
+            <img src="./assets/cat.jpg" alt="watercolour painting of a cat">
+            <img src="./assets/flowers2.jpg" alt="watercolour painting of a burst of colorful flowers">
             <img src="./assets/bunny.jpg" alt="watercolour bunny wearing a floral crown">
-         </div>
+            <img src="./assets/nametags.jpg" alt="pink and purple watercolour splash on calligraphy name cards">
+            <img src="./assets/mothersday.jpg" alt="watercolour floral cards for mother's day">
+            <img src="./assets/ap1.jpg" alt="watercolour portrait of a couple in front of a waterfall">
+            <img src="./assets/quote.jpg" alt="calligraphy quote: make everyday less ordinary">
+            <img src="./assets/bulldog.jpg" alt="watercolour english bulldog with a big smile">
+            <img src="./assets/flowers.jpg" alt="watercolour red flowers with green leaves">
+            <img src="./assets/cherryblossoms.jpg" alt="watercolour cherry blossoms">
       </section>
 
       <!-- === Footer Section === -->
-      <footer>
+      <footer class="contact" id="contact">
          <div class="wrapper">
             <h2>Let's Connect!</h2>
 

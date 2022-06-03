@@ -268,3 +268,254 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+h1, h2, h3 {
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+p, a, li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #5f5a6d;
+  line-height: 30px;
+}
+
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+main, section, footer {
+  background-color: #f2f1f6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+nav {
+  padding: 5px 0;
+  background: #dad9e1;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #5f5a6d;
+}
+
+nav a:hover,
+nav a:focus {
+  color: white;
+}
+
+header {
+  height: 120vh;
+  background-image: url("../assets/beigeBackground.jpg");
+  background-repeat: no-repeat;
+  z-index: -10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+#home h1, #home h2 {
+  color: #5f5a6d;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 300px;
+  left: 90px;
+  text-align: left;
+}
+
+#home h2 {
+  font-size: 2rem;
+}
+
+.headerImg {
+  height: 30%;
+  width: 45%;
+  -webkit-box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(0.9, 0.9) rotate(3deg);
+          transform: scale(0.9, 0.9) rotate(3deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  top: 20vh;
+  right: 100px;
+}
+
+.headerImg img {
+  border: 20px solid white;
+}
+
+.headerImg:hover,
+.headerImg:focus {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.about .wrapper {
+  background-color: #5f5a6d;
+  padding: 100px;
+  position: relative;
+  top: -130px;
+}
+
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aboutContainer img {
+  width: 30%;
+  border: 6px solid white;
+}
+
+.aboutRight {
+  width: 70%;
+  color: white;
+}
+
+.aboutRight p {
+  color: white;
+  padding-left: 30px;
+}
+
+.aboutRight ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: center;
+}
+
+.aboutRight i {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.skills .wrapper {
+  background-color: #d0a8b1;
+  padding: 100px;
+  margin-top: -6rem;
+}
+
+.skillsFlex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+  padding: 10px;
+  color: #5f5a6d;
+}
+
+.skillsFlex i {
+  font-size: 3rem;
+  color: white;
+}
+
+.skillsFlex p {
+  font-size: 1.75rem;
+  color: #5f5a6d;
+}
+
+.projects .wrapper {
+  background-color: #dad9e1;
+  padding: 100px;
+  margin-top: 0.5rem;
+}
+
+.gallery .wrapper {
+  background-color: #ae8b93;
+  padding: 100px;
+  margin-top: 0.5rem;
+}

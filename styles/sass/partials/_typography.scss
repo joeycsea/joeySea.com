@@ -1,2 +1,25 @@
 // _.typography.scss
 
+html {
+   font-size: 125%;
+}
+
+h1, h2, h3 {
+   font-family: $titleFont;
+   font-weight: 700;
+   letter-spacing: 1px;
+}
+
+h2 {
+   color: white;
+   font-size: 2rem;
+   margin-bottom: 50px;
+}
+
+p, a, li {
+   font-family: $bodyFont;
+   font-weight: 300;
+   color: $fifth;
+   line-height: 30px;
+}
+

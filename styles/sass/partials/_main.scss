@@ -1,0 +1,201 @@
+// _main.scss
+
+// Stripping styles
+body, h1, h2, h3, p, ul, li, a {
+   margin: 0;
+   padding: 0;
+}
+
+main, section, footer {
+   background-color: $sixth;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover;
+}
+
+.wrapper {
+   max-width: 1200px;
+   width: 95%;
+   margin: 0 auto;
+}
+
+ul, li {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+// Skip Link styles
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+// Nav styles
+nav {
+   padding: 5px 0;
+   background: $fourth;
+   position: fixed;
+   width: 100%;
+   z-index: 50;
+}
+
+nav ul {
+   display: flex;
+   justify-content: flex-end;
+}
+
+nav a {
+   display: inline-block;
+   padding: 10px;
+   margin: 10px 20px;
+   text-transform: uppercase;
+   font-weight: 500;
+   transition: 0.3s;
+   color: $fifth;
+}
+
+nav a:hover,
+nav a:focus {
+   color: white;
+}
+
+// Header styles
+header {
+   height: 120vh;
+   background-image: url("../assets/beigeBackground.jpg");
+   background-repeat: no-repeat;
+   z-index: -10;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+}
+
+#home h1, #home h2 {
+   color: $fifth;
+   font-size: 2.5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   top: 300px;
+   left: 90px;
+   text-align:left;
+}
+
+#home h2 {
+   font-size: 2rem;
+}
+.headerImg {
+   height: 30%;
+   width: 45%;
+   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+   transform: scale(0.9, 0.9) rotate(3deg);
+   transition: 0.3s;
+   position: relative;
+   top: 20vh;
+   right: 100px;
+}
+
+.headerImg img {
+   border: 20px solid white;
+}
+
+.headerImg:hover,
+.headerImg:focus {
+   transform: rotate(0deg);
+}
+
+// About styles
+.about .wrapper {
+   background-color: $fifth;
+   padding: 100px;
+   position: relative;
+   top: -130px;
+}
+
+.aboutContainer {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.aboutContainer img {
+   width: 30%;
+   border: 6px solid white;
+}
+
+.aboutRight {
+   width: 70%;
+   color: white;
+}
+
+.aboutRight p {
+   color: white;
+   padding-left: 30px;
+}
+
+.aboutRight ul {
+   display: flex;
+   justify-content: flex-end;
+   text-align: center;
+}
+
+.aboutRight i {
+   font-size: 2.8rem;
+   color: white;
+}
+
+//  Skills styles
+.skills .wrapper {
+   background-color: $second;
+   padding: 100px;
+   margin-top: -6rem;
+}
+
+.skillsFlex ul {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 20px;
+   padding: 10px;
+   color: $fifth;
+}
+
+.skillsFlex i {
+   font-size: 3rem;
+   color: white;
+}
+
+.skillsFlex p {
+   font-size: 1.75rem;
+   color: $fifth;
+}
+
+// Projects styles
+.projects .wrapper {
+   background-color: $fourth;
+   padding: 100px;
+   margin-top: 0.5rem;
+}
+
+//  Gallery styles
+.gallery .wrapper {
+   background-color: $third;
+   padding: 100px;
+   margin-top: 0.5rem;
+}
