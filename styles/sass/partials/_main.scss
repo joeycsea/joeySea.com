@@ -34,22 +34,22 @@ a {
 
 // Skip Link styles
 .skip-link {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
-  background: white;
-  color: black;
+   position: absolute;
+   left: -1000px;
+   top: 5px;
+   z-index: 999;
+   background: white;
+   color: black;
 }
 
 .skip-link:focus {
-  left: 0;
+   left: 0;
 }
 
 // Nav styles
 nav {
    padding: 5px 0;
-   background: $fourth;
+   background: $navColour;
    position: fixed;
    width: 100%;
    z-index: 50;
@@ -62,37 +62,34 @@ nav ul {
 
 nav a {
    display: inline-block;
-   padding: 10px;
-   margin: 10px 20px;
-   text-transform: uppercase;
+   padding: 6px;
+   margin: 6px 20px;
+   text-transform: lowercase;
    font-weight: 500;
+   font-size: 0.9rem;
    transition: 0.3s;
-   color: $fifth;
+   color: white;
+   // text-shadow: 3px 1px 3px $seventh;
 }
 
 nav a:hover,
 nav a:focus {
-   color: white;
+   color: $first;
 }
 
 // Header styles
 header {
-   height: 100vh;
-   background-image: url("../assets/beigeBackground.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
+   height: 95vh;
+   background: $second;
    z-index: -10;
    display: flex;
    justify-content: space-around;
    text-align: center;
 }
 
-h1 {
-   font-size: 4rem;
-}
-
 #home h1, #home h2 {
-   color: $fifth;
+   color: white;
+   text-shadow: 3px 5px 5px $seventh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -103,11 +100,13 @@ h1 {
 }
 
 #home h2 {
-   font-size: 2rem;
+   font-size: 2.5rem;
+   padding-top: 15px;
+   padding-left: 5px;
 }
 .headerImg {
-   height: 500px;
-   width: 800px;
+   height: 450px;
+   width: 750px;
    transform: scale(0.9, 0.9) rotate(3deg);
    transition: 1s;
    position: relative;
@@ -115,6 +114,7 @@ h1 {
    right: 100px;
    background: url("../assets/petolake.jpeg") no-repeat;
    background-size: contain;
+   border-radius: 30px;
 }
 
 .headerImg:hover,
@@ -125,12 +125,12 @@ h1 {
 }
 
 // About styles
-.about  {
-   background-color: $third;
-   padding: 100px 0;
-   border-bottom: 10px solid white;
+.about .wrapper {
+   background-color: $sixth;
+   padding: 100px 50px;
    h2 {
       padding-bottom: 50px;
+      color: $seventh;
    }
 }
 
@@ -142,8 +142,7 @@ h1 {
 
 .aboutContainer img {
    width: 30%;
-   // border: 6px solid white;
-   border-radius: 50%;;
+   border-radius: 20px;
 }
 
 .aboutRight {
@@ -152,34 +151,48 @@ h1 {
 }
 
 .aboutRight p {
-   color: white;
+   color: $seventh;
    padding-left: 75px;
    letter-spacing: 1px;
    font-size: 0.9rem;
 }
 
 .aboutRight a {
-   color: $first;
+   transition: 0.3s;
+   color: black;
+}
+
+.about a:hover,
+.about a:focus {
+   color: $seventh;
 }
 
 .aboutRight ul {
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
    text-align: center;
 }
 
 .aboutRight i {
    font-size: 2rem;
-   color: white;
    padding-left: 75px;
+   background:-moz-linear-gradient(top, $first 0%, $seventh 100%); 
+   background: -webkit-linear-gradient(top, $first 0%,$seventh 100%); 
+   background: linear-gradient(to bottom, $first 0%,$fourth 100%);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color:transparent;
 }
 
 //  Skills styles
 .skills  {
    background-color: $fifth;
    padding: 100px 0;
+   margin-top: -1rem;
    h2 {
       padding-bottom: 50px;
+      text-align: center;
    }
 }
 
@@ -197,14 +210,20 @@ h1 {
 
 .skillsFlex i {
    font-size: 3rem;
-   color: white;
-   transition: 0.3s;
+   background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
+   background: -webkit-linear-gradient(top, $first 0%,$seventh 100%); 
+   background: linear-gradient(to bottom, $first 0%,$fourth 100%);
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color:transparent;
+   transition: 0.1s;
    text-align: center;
 }
 
    .skillsFlex i:hover,
    .skillsFlex i:focus {
-   color: $third;
+   color: $first;
 }
 
 .skillsFlex p {
@@ -213,13 +232,21 @@ h1 {
 }
 
 // Projects styles
-.projects {
-   background-color: $second;
-   padding: 100px 0;
-   margin-top: 0.5rem;
+.projects  {
+   background-color: $third;
+   padding: 100px 60px;
    h2, h3, p, li  {
       color: white;
    }
+   h2 {
+      padding-bottom: 50px;
+   }
+}
+
+.projects h3 {
+   text-transform: capitalize;
+   font-size: 2rem;
+   margin-bottom: 20px;
 }
 
 .projectTwo, .projectOne, .assignmentOne {
@@ -230,6 +257,7 @@ h1 {
 .projects a {
    margin: 10px;
    padding: 20px;
+   transition: 0.3s;
 }
 .projectLinks a:hover,
 .projectLinks a:focus {
@@ -239,6 +267,7 @@ h1 {
 .projectWords {
    margin-left: 50px;
    width: calc(60% - 20px);
+   text-align: center;
 }
 
 .projectPic {
@@ -250,38 +279,36 @@ h1 {
    // border: 2px solid white;
 }
 
+.skillsFlex {
+   display: flex;
+   justify-content: center;
+}
+
 
 //  Gallery styles
 .gallery  {
    background-color: $fourth;
-   padding: 100px 0;
-   margin-top: 0.5rem;
+   padding: 100px 50px;
 }
 
 .gallery h2 {
-   color: $fifth;
+   color: $seventh;
    margin-bottom: 30px;
 }
 
-.artseaLogo {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   width: 100px;
-   height: 100px;
+.gallery p,
+.gallery a {
+   color: $seventh;
 }
 
-.artseaLogo img {
-   border-radius: 50%;
-}
-
-.artseaLogo a {
-   padding: 15px;
-}
-
-.artseaLogo a:hover,
-.artseaLogo a:focus {
+.gallery a {
    color: $third;
+   transition: 0.3s;
+}
+
+.gallery a:hover,
+.gallery a:focus {
+   color: white;
 }
 
 .gallery img {
@@ -299,13 +326,43 @@ h1 {
 }
 
 // Contact styles
-.contact  {
-   background-color: $third;
-   margin-top: 0.5rem;
+.contact {
+   // background-image: url("../assets/beigeBackground.jpg");
+   // background-repeat: no-repeat;
+   // background-size: cover;
+   background: $second;
 }
 
 .contact h2 {
    color: white;
    margin-bottom: 50px;
    padding: 100px 0;
+}
+
+.socials {
+   background-color: $fifth;
+   color: white;
+   display: flex;
+   justify-content: center;
+   padding: 40px 0;
+}
+
+.socials i {
+   color: $fourth;
+   font-size: 5rem;
+   margin: 40px;
+   transition: 0.3s;
+}
+
+.socials i:hover,
+.socials i:focus {
+   color: $first;
+}
+
+footer p {
+   color: white;
+   text-align: center;
+   background: $fifth;
+   padding-bottom: 30px;
+   font-size: 0.8rem;
 }
