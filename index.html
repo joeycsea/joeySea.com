@@ -40,8 +40,10 @@
             <h1>Joey Sea</h1>
             <h2>Front-End Web Developer</h2>
          </div>
-         <div class="headerImg">
+         <div class="polaroid">
+            <img src="./assets/petolake.jpeg" alt="Joey overlooking Peto Lake in Banff, Alberta" class="headerImg"></img>
          </div>
+
       </header>
       
       <!-- === About Section === -->
@@ -53,7 +55,7 @@
                   <img src="./assets/joeysea.jpeg" alt="photo of Joey Sea">
                   <div class="aboutRight">
                      <p>
-                        I'm Joey, my pronouns are she/her and I'm a Toronto-based Front-End Web Developer. My 5+ years of experience in banking operations and launching my own art business, <a href="https://www.etsy.com/ca/shop/MissArtsea">MissArtsea</a>, has allowed me to excel at logical thinking, creative problem-solving and improving the client experience (with web accessibilty in mind!).
+                        Hi there! I'm Joey, my pronouns are she/her and I'm a Toronto-based Front-End Web Developer. My 5+ years of experience in banking operations and launching my own art business, <a href="https://www.etsy.com/ca/shop/MissArtsea">MissArtsea</a>, has allowed me to excel at logical thinking, creative problem-solving and improving the client experience (with web accessibilty in mind!).
                         <br>
                         <br>
                         When I'm not coding, you can find me enjoying my many interests listed below:
@@ -63,7 +65,7 @@
                      <ul>
                         <li>
                            <i class="fa-solid fa-spa"></i>
-                           <p>Yoga</p>
+                           <p>Yoga & Meditation</p>
                         </li>
                         <li>
                            <i class="fa-solid fa-palette"></i>
@@ -145,7 +147,7 @@
          <!-- === Projects Section === -->
          <section class="projects" id="projects">
             <div class="wrapper">
-               <h2>Projects</h2>
+               <h2>My Projects</h2>
 
                <div class="projectTwo">
                   <div class="projectPic">
@@ -157,14 +159,14 @@
                         <a href="https://delightful-gingersnap-d0f5d7.netlify.app/">Live Site</a>
                         <a href="https://github.com/karleenAndJoey/showMeTheMoneyApp">GitHub Repo</a>
                      </div>
-                     <ul class="skillsFlex">
+                     <ul class="projectSkills">
                         <li>HTML</li>
                         <li>SCSS</li>
                         <li>JavaScript</li>
                         <li>Rest API</li>
                      </ul>
                      <div class="projectText">
-                        <p>Created an interactive, up-to-date currency exchange app using RESTful APIs through pair programming with Karleen Estanislao.</p>
+                        <p>Through pair programming with Karleen Estanislao, we created and designed an interactive, up-to-date currency exchange app using two RESTful APIs.</p>
                      </div>
                   </div>
                </div>
@@ -179,7 +181,7 @@
                         <a href="https://joey-sea-bar-one-project-one.netlify.app/">Live Site</a>
                         <a href="https://github.com/joeycsea/joeySeaProjectOne">GitHub Repo</a>
                      </div>
-                     <ul class="skillsFlex">
+                     <ul class="projectSkills">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>SCSS</li>
@@ -199,7 +201,7 @@
                      <div class="projectLinks">
                         <a href="https://codepen.io/joeysea/full/mdpgWzz">CodePen</a>
                      </div>
-                     <ul class="skillsFlex">
+                     <ul class="projectSkills">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>CodePen</li>
@@ -219,42 +221,42 @@
             <h2>MissArtsea Art Gallery</h2>
             <p>Here are some of my watercolour paintings and calligraphy! <br> Feel free to browse my <a href="https://www.etsy.com/ca/shop/MissArtsea">Etsy shop</a> and follow me on <a href="https://www.instagram.com/missartsea/?hl=en">Instagram!</a></p>
             <br>
-            <div class="artseaLogo">
-               <!-- <img src="./assets/missartsealogo.jpeg" alt="MissArtsea logo"> -->
-               
-               
-            </div>
-            
+         
             <div class="galleryImgs">
                <img src="./assets/bunny.jpg" alt="watercolour bunny wearing a floral crown">
                <img src="./assets/springcards.jpg" alt="3 watercolour cards with spring flowers">
                <img src="./assets/cat.jpg" alt="watercolour painting of a cat">
-               <img src="./assets/cherryblossoms.png" alt="watercolour cherry blossoms">
+               <img src="./assets/bookmark.jpg" alt="colourful watercolour name bookmarks">
                <img src="./assets/bulldog.jpg" alt="watercolour english bulldog with a big smile">
-               <img src="./assets/calligraphy.jpg" alt="black calligraphy ink on white paper">
-               <img src="./assets/nametags.jpg" alt="pink and purple watercolour splash on calligraphy name cards">
                <img src="./assets/flowers2.jpg" alt="watercolour painting of a burst of colorful flowers">
                <img src="./assets/ap1.jpg" alt="watercolour portrait of a couple in front of a waterfall">
+               <img src="./assets/calligraphyy.jpg" alt="black calligraphy ink on white paper">
                <img src="./assets/mothersday.jpg" alt="watercolour floral cards for mother's day">
-               <img src="./assets/quote.jpg" alt="calligraphy quote: make everyday less ordinary">
+               <img src="./assets/bookmarks2.jpg" alt="personalized name watercolour calligraphy bookmarks">
                <img src="./assets/flowers.jpg" alt="burst of watercolour colourful flowers">
+               <img src="./assets/cherryblossoms.png" alt="watercolour cherry blossoms">
             </div>
          </div>
       </section>
 
       <!-- === Footer Section === -->
-      <footer class="contact" id="contact">
+      <footer id="contact">
          <div class="wrapper">
-            <h2>Let's Connect!</h2>
-
-            <form action="POST">
-               <input type="text" name="name" id="name" placeholder="Name">
-               <input type="email" name="email" id="email" placeholder="Email">
-
-               <textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
-               <button>Submit</button>
-            </form>
+            <div class="formContainer">
+               <form action="POST">
+                  <h2>Let's Connect!</h2>
+                  <div class="formTop">
+                     <input type="text" name="name" id="name" placeholder="Name">
+                     <input type="email" name="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="formBottom">
+                     <textarea name="message" id="message" placeholder="Message"></textarea>
+                     <button>Send</button>
+                  </div>
+               </form>
+            </div>
          </div>
+         
          <div class="socials">
             <li>
                <a href="https://www.linkedin.com/in/joeysea/"><i class="fa-brands fa-linkedin"></i></a>

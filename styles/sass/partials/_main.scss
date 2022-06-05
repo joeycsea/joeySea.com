@@ -68,19 +68,20 @@ nav a {
    font-weight: 500;
    font-size: 0.9rem;
    transition: 0.3s;
-   color: white;
+   color: $seventh;
    // text-shadow: 3px 1px 3px $seventh;
+
 }
 
 nav a:hover,
 nav a:focus {
-   color: $first;
+   color: $sixth;
 }
 
 // Header styles
 header {
-   height: 95vh;
-   background: $second;
+   height: 100vh;
+   background-image: linear-gradient( $second, $second, $first);
    z-index: -10;
    display: flex;
    justify-content: space-around;
@@ -104,24 +105,28 @@ header {
    padding-top: 15px;
    padding-left: 5px;
 }
-.headerImg {
-   height: 450px;
-   width: 750px;
-   transform: scale(0.9, 0.9) rotate(3deg);
-   transition: 1s;
+
+.polaroid {
+   height: fit-content;
    position: relative;
-   top: 20vh;
-   right: 100px;
-   background: url("../assets/petolake.jpeg") no-repeat;
-   background-size: contain;
-   border-radius: 30px;
+   top: 8rem;
+   right: 6rem;
+   background-color: white;
+   transform: scale(0.9, 0.9) rotate(7deg);
+   transition: 1s;
+   border-radius: 10px;
 }
 
-.headerImg:hover,
-.headerImg:focus {
+.polaroid:hover {
    transform: rotate(0deg);
-   background: url("../assets/beehive.jpg") no-repeat;
-   background-size: contain;
+}
+
+.headerImg {
+   height: auto;
+   width: 700px;
+   padding: 20px 20px 100px 20px;
+   border-radius: 10px;
+   opacity: 95%;
 }
 
 // About styles
@@ -142,7 +147,8 @@ header {
 
 .aboutContainer img {
    width: 30%;
-   border-radius: 20px;
+   border-radius: 10px;
+   opacity: 95%;
 }
 
 .aboutRight {
@@ -233,7 +239,8 @@ header {
 
 // Projects styles
 .projects  {
-   background-color: $third;
+   // background-color: $third;
+   background-image: linear-gradient( $first, $second, $third);
    padding: 100px 60px;
    h2, h3, p, li  {
       color: white;
@@ -246,7 +253,8 @@ header {
 .projects h3 {
    text-transform: capitalize;
    font-size: 2rem;
-   margin-bottom: 20px;
+   margin-bottom: 35px;
+   margin-top: 10px;
 }
 
 .projectTwo, .projectOne, .assignmentOne {
@@ -258,7 +266,9 @@ header {
    margin: 10px;
    padding: 20px;
    transition: 0.3s;
+   font-weight: 500;
 }
+
 .projectLinks a:hover,
 .projectLinks a:focus {
    color: $sixth;
@@ -275,13 +285,20 @@ header {
 }
 
 .projectPic img {
-   border-radius: 30px;
-   // border: 2px solid white;
+   border-radius: 20px;
+   border: 3px solid $sixth;
 }
 
-.skillsFlex {
+.projectSkills {
    display: flex;
    justify-content: center;
+}
+
+.projectSkills li {
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   margin: 15px;
 }
 
 
@@ -326,17 +343,82 @@ header {
 }
 
 // Contact styles
-.contact {
-   // background-image: url("../assets/beigeBackground.jpg");
-   // background-repeat: no-repeat;
-   // background-size: cover;
-   background: $second;
+#contact {
+   background-color: $sixth;
+   padding-top: 60px;
 }
 
-.contact h2 {
-   color: white;
-   margin-bottom: 50px;
-   padding: 100px 0;
+#contact h2 {
+   color: $seventh;
+   padding: 40px 0;
+}
+
+.formContainer {
+   background: $second;
+   padding: 20px 0;
+   margin-bottom: 60px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.formTop {
+   display: flex;
+}
+
+.formBottom {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+input {
+   width: 50%;
+}
+
+input[type="text"] {
+   margin-left: 0;
+}
+
+input[type="email"] {
+   margin-right: 0;
+}
+
+input, textarea {
+   font-family: $bodyFont;
+   font-weight: 300;
+   font-size: 0.8rem;
+   border: none;
+   padding: 15px;
+   margin: 10px;
+   border-radius: 5px;
+}
+
+textarea {
+   border: 1px solid white;
+   resize: none;
+   width: 100%;
+   height: 300px;
+}
+
+button {
+   width: 50%;
+   font-family: $bodyFont;
+   display: inline-block;
+   padding: 10px 80px;
+   border-radius: 10px;
+   background: $fifth;
+   color: $sixth;
+   transition: 0.3s;
+   border: none;
+   margin-top: 20px;
+}
+
+button:hover,
+button:focus {
+   background-color: $seventh;
 }
 
 .socials {
@@ -363,6 +445,6 @@ footer p {
    color: white;
    text-align: center;
    background: $fifth;
-   padding-bottom: 30px;
+   padding-bottom: 15px;
    font-size: 0.8rem;
 }
