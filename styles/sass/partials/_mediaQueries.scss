@@ -1,0 +1,45 @@
+@media (max-width: 750px) {
+   .mainNav {
+      display: none;
+   }
+
+   .mobileNav {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 100%;
+      top: 55px;
+      text-align: center;
+      background-color: $sixth;
+      z-index: 100;
+      transition: all 0.5s;
+   }
+   
+   .mobileNavButton {
+      display: block;
+      position: fixed;
+      top: -20px;
+      width: 100%;
+      border-radius: 0;
+      padding: 20px;
+      background: $navColour;
+      color: $seventh;
+      text-transform: lowercase;
+      letter-spacing: 1px;
+   }
+
+   // ul.mobileNav a {
+   //    border-bottom: 2px solid $orange;
+   //    display: inline-block;
+   //    font-size: 1.5rem;
+   //    width: 100%;
+   //    padding: 15px;
+   //    transition: all 0.3s;
+   // }
+
+   .active {
+      display: block;
+      transform: translateX(0);
+   }
+}

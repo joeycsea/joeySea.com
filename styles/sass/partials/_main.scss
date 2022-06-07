@@ -47,7 +47,9 @@ a {
 }
 
 // Nav styles
-nav {
+.mainNav {
+   display: flex;
+   justify-content: center;
    padding: 5px 0;
    background: $navColour;
    position: fixed;
@@ -55,62 +57,111 @@ nav {
    z-index: 50;
 }
 
-nav ul {
-   display: flex;
-   justify-content: flex-end;
-}
-
-nav a {
+.mainNav a {
    display: inline-block;
-   padding: 6px;
-   margin: 6px 20px;
+   padding: 15px;
+   margin: 0 8px;
    text-transform: lowercase;
    font-weight: 500;
    font-size: 0.9rem;
    transition: 0.3s;
    color: $seventh;
-   // text-shadow: 3px 1px 3px $seventh;
-
 }
 
-nav a:hover,
-nav a:focus {
+.mainNav a:hover,
+.mainNav a:focus {
    color: $sixth;
+}
+
+.joeySeaNav a {
+   font-family: $titleFont;
+   text-shadow: 2px 2px 2px $sixth;
+   font-size: 1.9rem;
+   font-weight: 700;
+}
+
+.joeySeaNav a:hover,
+.joeySeaNav a:focus {
+   color: $fifth;
+}
+
+// Mobile Nav styles
+.mobileNav {
+   display: none;
+   // transform: translateX(-100%);
+   // transition: transform 0.2s ease;
+   
+}
+
+.mobileNavButton {
+   display: none;
 }
 
 // Header styles
 header {
    height: 100vh;
-   background-image: linear-gradient( $second, $second, $first);
-   z-index: -10;
-   display: flex;
-   justify-content: space-around;
-   text-align: center;
+   background-image: linear-gradient($second, $second, $first);
 }
 
-#home h1, #home h2 {
+.headerFlex {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.fa-chevron-down {
+   position: relative;
+   top: 10vh;
+   left: 0px;
+   font-size: 2rem;
+   padding: 30px;
+   animation: pulse 2s ease-in-out infinite;
+   color: $seventh;
+}
+
+.fa-chevron-up {
+   position: relative;
+   bottom: -575px;
+   right: -250px;
+   font-size: 2rem;
+   padding: 30px;
+   animation: pulse 2s ease-in-out infinite;
+   color: $sixth;  
+}
+
+@keyframes pulse {
+   from {
+      transform: translateY(0rem);
+   }
+   50% {
+      transform: translateY(2rem);
+   }
+   to {
+      transform: translateY(0rem);
+   }
+}
+
+.heading {
    color: white;
    text-shadow: 3px 5px 5px $seventh;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   position: relative;
-   top: 300px;
-   left: 125px;
-   text-align:left;
+   align-items: flex-start;
 }
 
-#home h2 {
-   font-size: 2.5rem;
+.headerFlex h2 {
+   font-size: 2rem;
    padding-top: 15px;
-   padding-left: 5px;
+   text-align: left;
 }
 
 .polaroid {
    height: fit-content;
    position: relative;
    top: 8rem;
-   right: 6rem;
+   right: -1rem;
    background-color: white;
    transform: scale(0.9, 0.9) rotate(7deg);
    transition: 1s;
@@ -123,7 +174,7 @@ header {
 
 .headerImg {
    height: auto;
-   width: 700px;
+   width: 550px;
    padding: 20px 20px 100px 20px;
    border-radius: 10px;
    opacity: 95%;
@@ -217,7 +268,7 @@ header {
 .skillsFlex i {
    font-size: 3rem;
    background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
-   background: -webkit-linear-gradient(top, $first 0%,$seventh 100%); 
+   background: -webkit-linear-gradient(top, $first 0%,$fourth 100%); 
    background: linear-gradient(to bottom, $first 0%,$fourth 100%);
    -webkit-background-clip: text;
    -moz-background-clip: text;
@@ -240,7 +291,7 @@ header {
 // Projects styles
 .projects  {
    // background-color: $third;
-   background-image: linear-gradient( $first, $second, $third);
+   background: $second;
    padding: 100px 60px;
    h2, h3, p, li  {
       color: white;
@@ -363,6 +414,10 @@ header {
    align-items: center;
 }
 
+form {
+   width: 60%;
+}
+
 .formTop {
    display: flex;
 }
@@ -448,3 +503,27 @@ footer p {
    padding-bottom: 15px;
    font-size: 0.8rem;
 }
+
+
+// .fa-chevron-up,
+// .fa-chevron-down {
+// 	font-size: 2rem;
+// 	animation: arrow 1s linear 0s infinite normal;
+// 	a {
+// 		padding: 15px;
+// 	}
+// }
+
+// .fa-chevron-down {
+// 	margin-left: -15px;
+// }
+
+// // arrow scroll animation
+// @keyframes  ____ {
+// 	50% {
+// 		transform: translateY(-10px);
+// 	}
+// 	100% {
+// 		transform: translateY(0px);
+// 	}
+// }

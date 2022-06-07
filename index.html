@@ -21,31 +21,58 @@
    <body>
       <!-- === Skip link === -->
       <a href="#about" class="skip-link">Skip to Content</a>
+
+      
       <!-- === Nav Bar === -->
       <nav>
-         <div class="wrapper">
-            <ul>
+         <!-- <div class="wrapper"> -->
+            <ul class="mainNav">
                <li><a href="#home">Home</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#skills">Skills</a></li>
+               <li class="joeySeaNav"><a href="#home">joey</a></li>
                <li><a href="#projects">Projects</a></li>
                <li><a href="#gallery">Gallery</a></li>
                <li><a href="#contact">Contact</a></li>
             </ul>
-         </div>
+         <!-- </div> -->
+      </nav>  
+
+      <!-- === Hamburger Menu === -->
+      <nav class="mobileNav">
+         <button class="mobileNavButton">
+            <i class="fa-solid fa-bars">  Menu</i>
+         </button>
+
+         <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
       </nav>
 
-      <header>
-         <div class="wrapper" id="home">
-            <h1>Joey Sea</h1>
-            <h2>Front-End Web Developer</h2>
+   
+      <header id="home">
+         <div class="wrapper">
+            <div class="headerFlex">
+               <div class="heading" id="home">
+                  <h1>Joey Sea</h1>
+                  <h2>Front-End Web Developer</h2>
+               </div>
+               <div class="polaroid">
+                  <img src="./assets/petolake.jpeg" alt="Joey overlooking Peto Lake in Banff, Alberta" class="headerImg"></img>
+               </div>
+            </div>
+               
+               <a href="#about" aria-label="Interact to see more"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
          </div>
-         <div class="polaroid">
-            <img src="./assets/petolake.jpeg" alt="Joey overlooking Peto Lake in Banff, Alberta" class="headerImg"></img>
-         </div>
-
       </header>
-      
+
+
+
       <!-- === About Section === -->
       <main>
          <section class="about" id="about">
@@ -58,7 +85,7 @@
                         Hi there! I'm Joey, my pronouns are she/her and I'm a Toronto-based Front-End Web Developer. My 5+ years of experience in banking operations and launching my own art business, <a href="https://www.etsy.com/ca/shop/MissArtsea">MissArtsea</a>, has allowed me to excel at logical thinking, creative problem-solving and improving the client experience (with web accessibilty in mind!).
                         <br>
                         <br>
-                        When I'm not coding, you can find me enjoying my many interests listed below: test
+                        When I'm not coding, you can find me enjoying my many interests listed below:
                         <br>
                         <br>
                      </p>
@@ -254,9 +281,11 @@
                      <button>Send</button>
                   </div>
                </form>
+               <a href="#home" aria-label="Back to Home"><i class="fa-solid fa-chevron-up" aria-hidden="true"></i></a>
             </div>
          </div>
-         
+
+
          <div class="socials">
             <li>
                <a href="https://www.linkedin.com/in/joeysea/"><i class="fa-brands fa-linkedin"></i></a>
@@ -274,9 +303,9 @@
                <a href=" mailto: joey.c.sea@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </li>
          </div>
-         <p>© 2022 joey sea</p>
+         <p>© 2022 developed with 💜 by Joey Sea</p>
       </footer>
 
-      <script src="./script.js"></script>
+      <script src="./scripts/app.js"></script>
    </body>
 </html>
