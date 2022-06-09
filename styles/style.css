@@ -350,7 +350,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5px 0;
-  background: #d0ccda;
+  background: #f2f1f6;
   position: fixed;
   width: 100%;
   z-index: 50;
@@ -359,38 +359,54 @@ a {
 .mainNav a {
   display: inline-block;
   padding: 15px;
+  padding-bottom: 3px;
   margin: 0 8px;
   text-transform: lowercase;
   font-weight: 500;
   font-size: 0.9rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #c39ca5;
+  display: inline-block;
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b6c78;
+  -webkit-transition: width 0.25s ease-out;
+  transition: width 0.25s ease-out;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a:hover,
+a:focus {
   color: #8b6c78;
 }
 
-.mainNav a:hover,
-.mainNav a:focus {
-  color: #f2f1f6;
-}
-
-.joeySeaNav a {
+.joeySeaNav {
   font-family: "Cardo", serif;
-  text-shadow: 2px 2px 2px #f2f1f6;
+  text-shadow: 2px 2px 2px #dad9e1;
   font-size: 1.9rem;
   font-weight: 700;
-}
-
-.joeySeaNav a:hover,
-.joeySeaNav a:focus {
-  color: #5f5a6d;
+  padding: 12px;
+  color: #8b6c78;
 }
 
 .mobileNav {
   display: none;
 }
-
-.mobileNavButton {
-  display: none;
+.mobileNav i {
+  font-size: 1.5rem;
+  padding-right: 10px;
 }
 
 header {
@@ -417,7 +433,7 @@ header {
 
 .fa-chevron-down {
   position: relative;
-  top: 10vh;
+  top: 20vh;
   left: 0px;
   font-size: 2rem;
   padding: 30px;
@@ -428,7 +444,7 @@ header {
 
 .fa-chevron-up {
   position: relative;
-  bottom: -575px;
+  bottom: -450px;
   right: -250px;
   font-size: 2rem;
   padding: 30px;
@@ -446,10 +462,6 @@ header {
     -webkit-transform: translateY(2rem);
             transform: translateY(2rem);
   }
-  to {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
-  }
 }
 
 @keyframes pulse {
@@ -460,10 +472,6 @@ header {
   50% {
     -webkit-transform: translateY(2rem);
             transform: translateY(2rem);
-  }
-  to {
-    -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
   }
 }
 .heading {
@@ -482,8 +490,33 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-animation: slideIn;
+          animation: slideIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
+@-webkit-keyframes slideIn {
+  from {
+    margin-left: -100px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: -100px;
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
 .headerFlex h2 {
   font-size: 2rem;
   padding-top: 15px;
@@ -513,16 +546,16 @@ header {
 .headerImg {
   height: auto;
   width: 550px;
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 120px 20px;
   border-radius: 10px;
   opacity: 95%;
 }
 
-.about .wrapper {
+.about {
   background-color: #f2f1f6;
-  padding: 100px 50px;
+  padding: 100px 0;
 }
-.about .wrapper h2 {
+.about h2 {
   padding-bottom: 50px;
   color: #8b6c78;
 }
@@ -565,7 +598,7 @@ header {
 
 .about a:hover,
 .about a:focus {
-  color: #8b6c78;
+  color: #f4bbc2;
 }
 
 .aboutRight ul {
@@ -654,7 +687,6 @@ header {
   text-transform: capitalize;
   font-size: 2rem;
   margin-bottom: 35px;
-  margin-top: 10px;
 }
 
 .projectTwo, .projectOne, .assignmentOne {
@@ -667,14 +699,32 @@ header {
 .projects a {
   margin: 10px;
   padding: 20px;
+  padding-bottom: 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: 500;
+  position: relative;
+}
+
+.projects a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f2f1f6;
+  -webkit-transition: width 0.25s ease-out;
+  transition: width 0.25s ease-out;
+}
+
+.projects a:hover::before {
+  width: 100%;
 }
 
 .projectLinks a:hover,
 .projectLinks a:focus {
-  color: #f2f1f6;
+  color: #767184;
 }
 
 .projectWords {
@@ -763,7 +813,7 @@ header {
 
 #contact h2 {
   color: #8b6c78;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .formContainer {
@@ -783,7 +833,7 @@ header {
 }
 
 form {
-  width: 60%;
+  width: 50%;
 }
 
 .formTop {
@@ -865,12 +915,12 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .socials i {
-  color: #dad9e1;
-  font-size: 5rem;
+  color: #767184;
+  font-size: 4rem;
   margin: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -889,13 +939,44 @@ footer p {
   font-size: 0.8rem;
 }
 
+@media (max-width: 1230px) {
+  .aboutRight ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media (max-width: 750px) {
+  .joeySeaNav {
+    padding-left: 30px;
+  }
+
   .mainNav {
     display: none;
   }
 
-  .mobileNav {
+  .mobileNavButton {
     display: block;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: -20px;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+    background: #f2f1f6;
+    color: #8b6c78;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .mobileNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -905,30 +986,42 @@ footer p {
             flex-direction: column;
     position: fixed;
     width: 100%;
-    top: 55px;
     text-align: center;
     background-color: #f2f1f6;
     z-index: 100;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-
-  .mobileNavButton {
-    display: block;
-    position: fixed;
-    top: -20px;
-    width: 100%;
-    border-radius: 0;
-    padding: 20px;
-    background: #d0ccda;
+    text-align: center;
     color: #8b6c78;
-    text-transform: lowercase;
-    letter-spacing: 1px;
+  }
+  .mobileNav ul {
+    display: none;
+  }
+  .mobileNav li {
+    padding: 10px;
+  }
+  .mobileNav i {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 30px;
   }
 
-  .active {
+  ul.active {
     display: block;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+
+  ul.active a {
+    display: inline-block;
+    padding: 10px;
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 0.9rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #c39ca5;
+  }
+
+  ul.active a:hover {
+    color: #8b6c78;
   }
 }

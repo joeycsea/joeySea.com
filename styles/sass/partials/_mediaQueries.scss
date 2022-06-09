@@ -1,45 +1,76 @@
+//_mediaQueries.scss
+
+@media (max-width: 1230px) {
+   .aboutRight ul {
+      flex-wrap: wrap;
+   }
+}
+
+
 @media (max-width: 750px) {
+   .joeySeaNav {
+      padding-left: 30px;
+   }
+
    .mainNav {
       display: none;
    }
 
-   .mobileNav {
+   .mobileNavButton {
       display: block;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: -20px;
+      width: 100%;
+      border-radius: 0;
+      padding: 10px;
+      background: $sixth;
+      color: $seventh;
+      margin-top: 15px;
+      text-align: left;
+   }
+
+   .mobileNav {
       display: flex;
       flex-direction: column;
       position: fixed;
       width: 100%;
-      top: 55px;
       text-align: center;
       background-color: $sixth;
       z-index: 100;
-      transition: all 0.5s;
+      text-align: center;
+      color: $seventh;
+      ul {
+         display: none;
+      }
+      li {
+         padding: 10px;
+      }
+      i {
+         cursor: pointer;
+         display: inline-block;
+         padding: 0 30px;
+      }
    }
    
-   .mobileNavButton {
+   ul.active {
       display: block;
-      position: fixed;
-      top: -20px;
-      width: 100%;
-      border-radius: 0;
-      padding: 20px;
-      background: $navColour;
-      color: $seventh;
-      text-transform: lowercase;
-      letter-spacing: 1px;
+      transition: all 0.8s;
    }
 
-   // ul.mobileNav a {
-   //    border-bottom: 2px solid $orange;
-   //    display: inline-block;
-   //    font-size: 1.5rem;
-   //    width: 100%;
-   //    padding: 15px;
-   //    transition: all 0.3s;
-   // }
+   ul.active a {
+      display: inline-block;
+      padding: 10px;
+      text-transform: lowercase;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      color: $third;
+   }
 
-   .active {
-      display: block;
-      transform: translateX(0);
+   ul.active a:hover {
+      color: $seventh;
    }
 }
