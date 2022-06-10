@@ -46,6 +46,7 @@ a {
    left: 0;
 }
 
+// Scroll animation styles
 .reveal {
    position: relative;
    transform: translateY(150px);
@@ -123,13 +124,7 @@ a {
    }
 }
 
-// Header styles
-header {
-   height: 100vh;
-   background-image: linear-gradient($second, $second, $first);
-}
-
-// Typewriter Animation
+// Typewriter Animation styles
 span {
    animation: blinker 1s linear infinite;
 }
@@ -138,6 +133,12 @@ span {
   50%{
     opacity: 0;
   }
+}
+
+// Header styles
+header {
+   height: 100vh;
+   background-image: linear-gradient($second, $second, $first);
 }
 
 .headerFlex {
@@ -214,7 +215,6 @@ span {
    width: 500px;
    padding: 20px 20px 120px 20px;
    border-radius: 10px;
-   opacity: 95%;
 }
 
 // About styles
@@ -445,7 +445,8 @@ span {
 // Contact styles
 #contact {
    background-image: url("../assets/beigeBackground.jpg");
-   background-size: contain;
+   background-size: cover;
+   background-repeat: no-repeat;
    padding-top: 60px;
 }
 
@@ -469,7 +470,7 @@ span {
 }
 
 form {
-   width: 50%;
+   width: 65%;
 }
 
 .formTop {
@@ -522,7 +523,7 @@ button {
    color: $sixth;
    transition: 0.3s;
    border: none;
-   margin-top: 20px;
+   margin: 20px 0;
 }
 
 button:hover,
@@ -543,7 +544,7 @@ button:focus {
 .socials i {
    color: $eighth;
    font-size: 4rem;
-   margin: 40px;
+   margin: 30px;
    transition: 0.3s;
 }
 
@@ -556,6 +557,6 @@ footer p {
    color: white;
    text-align: center;
    background: $fifth;
-   padding-bottom: 15px;
+   padding-bottom: 10px 0;
    font-size: 0.8rem;
 }

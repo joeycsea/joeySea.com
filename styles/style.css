@@ -428,12 +428,6 @@ a {
   padding-right: 10px;
 }
 
-header {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0a8b1), color-stop(#d0a8b1), to(#f4bbc2));
-  background-image: linear-gradient(#d0a8b1, #d0a8b1, #f4bbc2);
-}
-
 span {
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
@@ -450,6 +444,12 @@ span {
     opacity: 0;
   }
 }
+header {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0a8b1), color-stop(#d0a8b1), to(#f4bbc2));
+  background-image: linear-gradient(#d0a8b1, #d0a8b1, #f4bbc2);
+}
+
 .headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,7 +572,6 @@ span {
   width: 500px;
   padding: 20px 20px 120px 20px;
   border-radius: 10px;
-  opacity: 95%;
 }
 
 .about {
@@ -830,7 +829,8 @@ span {
 
 #contact {
   background-image: url("../assets/beigeBackground.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 60px;
 }
 
@@ -860,7 +860,7 @@ span {
 }
 
 form {
-  width: 50%;
+  width: 65%;
 }
 
 .formTop {
@@ -925,7 +925,7 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 button:hover,
@@ -948,7 +948,7 @@ button:focus {
 .socials i {
   color: #767184;
   font-size: 4rem;
-  margin: 40px;
+  margin: 30px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -962,11 +962,11 @@ footer p {
   color: white;
   text-align: center;
   background: #5f5a6d;
-  padding-bottom: 15px;
+  padding-bottom: 10px 0;
   font-size: 0.8rem;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1220px) {
   .aboutRight ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -983,7 +983,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 180px;
+    padding-top: 150px;
   }
 
   .headerImg {
@@ -991,25 +991,28 @@ footer p {
   }
 
   .polaroid {
-    top: 4rem;
+    top: 3rem;
     right: -1rem;
   }
 
   .fa-chevron-down {
-    top: 10vh;
+    top: -100px;
   }
 }
-@media (max-width: 1155px) {
+@media (max-width: 920px) {
+  .fa-chevron-down {
+    display: none;
+  }
+
   .gallery {
-    padding: 75px 0;
+    padding: 40px 0;
   }
 
   .gallery img {
-    width: 150px;
-    margin: 10px;
+    width: 140px;
+    margin: 5px;
   }
-}
-@media (max-width: 830px) {
+
   .about, .projects, .skills {
     padding: 50px 10px;
   }
@@ -1038,7 +1041,7 @@ footer p {
     padding-left: 0;
   }
   .aboutRight li {
-    margin: 20px;
+    margin: 20px 40px;
   }
   .aboutRight i {
     padding-left: 0;
@@ -1086,7 +1089,7 @@ footer p {
     width: 100%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .joeySeaNav {
     padding-left: 25px;
     font-size: 1.6rem;
@@ -1168,6 +1171,21 @@ footer p {
   ul.active a:hover {
     color: #8b6c78;
   }
+
+  .headerFlex {
+    padding-top: 90px;
+  }
+
+  .headerImg {
+    width: 300px;
+    right: 0rem;
+    padding: 10px 10px 90px 10px;
+  }
+
+  .polaroid {
+    top: 3rem;
+    right: 0rem;
+  }
 }
 @media (max-width: 625px) {
   .projectSkills {
@@ -1199,25 +1217,6 @@ footer p {
     font-size: 0.8rem;
   }
 
-  .fa-chevron-down {
-    display: none;
-  }
-
-  .headerFlex {
-    padding-top: 90px;
-  }
-
-  .headerImg {
-    width: 310px;
-    right: 0rem;
-    padding: 10px 10px 90px 10px;
-  }
-
-  .polaroid {
-    top: 2rem;
-    right: 0rem;
-  }
-
   .aboutContainer img {
     width: 65%;
   }
@@ -1227,7 +1226,7 @@ footer p {
   }
 
   .skillsFlex li {
-    margin: 20px 10px;
+    margin: 30px 25px;
   }
 
   .projectContainer {
@@ -1267,6 +1266,7 @@ footer p {
   .socials i {
     font-size: 2rem;
     padding: 0;
+    margin: 20px;
   }
   .socials ul {
     padding: 0;

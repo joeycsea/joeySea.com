@@ -1,15 +1,14 @@
 //_mediaQueries.scss
-
-@media (max-width: 1230px) {
+@media (max-width: 1220px) {
    .aboutRight ul {
       flex-wrap: wrap;
    }
-
+   
    .headerFlex {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 180px;
+      padding-top: 150px;
    }
    
    .headerImg {
@@ -17,28 +16,28 @@
    }
    
    .polaroid {
-      top: 4rem;
+      top: 3rem;
       right: -1rem;
    }
    
    .fa-chevron-down {
-      top: 10vh;
+      top: -100px;
    }
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 920px) {
+   .fa-chevron-down {
+      display: none;
+   }
 
    .gallery {
-      padding: 75px 0;
+      padding: 40px 0;
    }
-
+   
    .gallery img {
-      width: 150px;
-      margin: 10px;
+      width: 140px;
+      margin: 5px;
    }
-}
-
-@media (max-width: 830px) {
    .about, .projects, .skills {
          padding: 50px 10px;
       }
@@ -59,7 +58,7 @@
          padding-left: 0;
       }
       li {
-         margin: 20px;
+         margin: 20px 40px;
       }
       i {
          padding-left: 0;
@@ -106,7 +105,7 @@
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
    .joeySeaNav {
       padding-left: 25px;
       font-size: 1.6rem;
@@ -115,7 +114,7 @@
    .mainNav {
       display: none;
    }
-
+   
    .mobileNavButton {
       display: block;
       position: fixed;
@@ -130,7 +129,7 @@
       background: $sixth;
       color: $seventh;
    }
-
+   
    .mobileNav {
       display: flex;
       flex-direction: column;
@@ -161,7 +160,7 @@
       display: block;
       transition: all 0.8s;
    }
-
+   
    ul.active a {
       display: block;
       padding: 10px;
@@ -171,9 +170,26 @@
       transition: all 0.3s;
       color: $third;
    }
-
+   
    ul.active a:hover {
       color: $seventh;
+   }
+
+ 
+   
+   .headerFlex {
+      padding-top: 90px;
+   }
+   
+   .headerImg  {
+      width: 300px;
+      right: 0rem;
+      padding: 10px 10px 90px 10px;
+   }
+   
+   .polaroid {
+      top: 3rem;
+      right: 0rem;
    }
 }
 
@@ -207,26 +223,7 @@
       font-size: 0.8rem;
    }
 
-   .fa-chevron-down {
-      display: none;
-   }
 
-   .headerFlex {
-      padding-top: 90px;
-   }
-
-   .headerImg  {
-      width: 310px;
-      right: 0rem;
-      padding: 10px 10px 90px 10px;
-   }
-
-   .polaroid {
-      top: 2rem;
-      right: 0rem;
-   }
-
-   
    .aboutContainer img {
       width: 65%;
    }
@@ -236,7 +233,7 @@
    }
    
    .skillsFlex li {
-      margin: 20px 10px;
+      margin: 30px 25px;
    }
    
    .projectContainer {
@@ -273,6 +270,7 @@
       i {
          font-size: 2rem;
          padding: 0;
+         margin: 20px;
       }
       ul {
          padding: 0;
