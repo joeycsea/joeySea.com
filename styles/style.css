@@ -1186,19 +1186,24 @@ footer p {
 }
 @media (max-width: 540px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
-  h2 {
-    font-size: 2.25rem;
+  .headerFlex h2 {
+    font-size: 1.8rem;
+    padding-top: 25px;
   }
 
   p {
     font-size: 0.8rem;
   }
 
-  .aboutContainer img {
-    width: 65%;
+  .fa-chevron-down {
+    display: none;
+  }
+
+  .headerFlex {
+    padding-top: 90px;
   }
 
   .headerImg {
@@ -1208,7 +1213,24 @@ footer p {
   }
 
   .polaroid {
+    top: 2rem;
     right: 0rem;
+  }
+
+  .aboutContainer img {
+    width: 65%;
+  }
+
+  .aboutRight p {
+    font-size: 0.8rem;
+  }
+
+  .skillsFlex li {
+    margin: 20px 10px;
+  }
+
+  .projects h3 {
+    font-size: 1.8rem;
   }
 
   .gallery img {
@@ -1232,6 +1254,11 @@ footer p {
   .socials ul {
     padding: 0;
     margin: 0;
+  }
+
+  .formContainer {
+    padding: 25px;
+    border-radius: 15px;
   }
 
   .formTop {

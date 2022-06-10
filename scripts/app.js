@@ -30,7 +30,7 @@ function closeSideMenu() {
 //  Typewriter Animation
 // source: https://codepen.io/codefoxx/pen/xxdoyBJ
 
-let textArray = ["front-end web developer "];
+let textArray = ["front-end web developer"];
 let textPosition = 0;
 let speed = 100;
 
