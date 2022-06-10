@@ -15,21 +15,30 @@
    }
    
    .headerImg {
-      width: 450px;
+      width: 400px;
    }
    
    .polaroid {
-      top: 4.5rem;
+      top: 4rem;
       right: -1rem;
    }
 
    .fa-chevron-down {
       top: 10vh;
    }
+
+   .gallery {
+      padding: 75px 0;
+   }
+
+   .gallery img {
+      width: 150px;
+      margin: 10px;
+   }
 }
 
 @media (max-width: 830px) {
-   .about .gallery, .projects, .skills {
+   .about, .projects, .skills {
          padding: 50px 10px;
       }
 
@@ -73,17 +82,12 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-}
+   }
 
    .projectWords {
       margin-top: 50px;
       width: 100%;
       margin-left: 0;
-   }
-
-   .gallery img {
-      width: 150px;
-      margin: 10px;
    }
 
    .formContainer {
@@ -189,8 +193,11 @@
 }
 
 @media (max-width: 540px) {
+   h1 {
+      font-size: 4rem;
+   }
    h2 {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
    }
 
    p {
@@ -202,13 +209,18 @@
    }
 
    .headerImg  {
-      width: 350px;
+      width: 310px;
       right: 0rem;
       padding: 10px 10px 90px 10px;
    }
 
    .polaroid {
       right: 0rem;
+   }
+
+   .gallery img {
+      width: 130px;
+      margin: 5px;
    }
 
    .socials {
@@ -228,8 +240,8 @@
    }
 
    .formTop {
-   display: flex;
-   flex-direction: column;
+      display: flex;
+      flex-direction: column;
    }
 
    input {
@@ -243,5 +255,5 @@
    input[type="email"] {
       margin-left: 0;
    }
-
 }
+

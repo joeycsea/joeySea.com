@@ -271,6 +271,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -317,7 +318,7 @@ img {
 
 .wrapper {
   max-width: 1200px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -964,20 +965,29 @@ footer p {
   }
 
   .headerImg {
-    width: 450px;
+    width: 400px;
   }
 
   .polaroid {
-    top: 4.5rem;
+    top: 4rem;
     right: -1rem;
   }
 
   .fa-chevron-down {
     top: 10vh;
   }
+
+  .gallery {
+    padding: 75px 0;
+  }
+
+  .gallery img {
+    width: 150px;
+    margin: 10px;
+  }
 }
 @media (max-width: 830px) {
-  .about .gallery, .projects, .skills {
+  .about, .projects, .skills {
     padding: 50px 10px;
   }
 
@@ -1039,11 +1049,6 @@ footer p {
     margin-top: 50px;
     width: 100%;
     margin-left: 0;
-  }
-
-  .gallery img {
-    width: 150px;
-    margin: 10px;
   }
 
   .formContainer {
@@ -1157,8 +1162,12 @@ footer p {
   }
 }
 @media (max-width: 540px) {
+  h1 {
+    font-size: 4rem;
+  }
+
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   p {
@@ -1170,13 +1179,18 @@ footer p {
   }
 
   .headerImg {
-    width: 350px;
+    width: 310px;
     right: 0rem;
     padding: 10px 10px 90px 10px;
   }
 
   .polaroid {
     right: 0rem;
+  }
+
+  .gallery img {
+    width: 130px;
+    margin: 5px;
   }
 
   .socials {
