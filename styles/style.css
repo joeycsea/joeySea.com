@@ -963,7 +963,7 @@ footer p {
   text-align: center;
   background: #5f5a6d;
   padding-bottom: 10px 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 @media (max-width: 1220px) {
@@ -1140,7 +1140,7 @@ footer p {
     display: none;
   }
   .mobileNav li {
-    padding: 10px;
+    padding: 3px;
   }
   .mobileNav li:first-child {
     padding-top: 50px;
