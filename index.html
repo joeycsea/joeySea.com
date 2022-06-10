@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Joey Sea's Portfolio</title>
+      <title>joeySea | webDeveloper</title>
       <!-- === Favicon === -->
       <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/android-chrome-192x192.png">
       <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
@@ -41,10 +41,10 @@
 
       <!-- === Hamburger Nav Bar === -->
       <nav class="mobileNav">
-         <span class="mobileNavButton">
+         <div class="mobileNavButton">
             <p class="joeySeaNav">joey sea</p>
             <i class="fa-solid fa-bars"></i>
-         </span>
+         </div>
 
          <ul>
             <li><a class="mobileItem"href="#home">Home</a></li>
@@ -62,7 +62,7 @@
             <div class="headerFlex">
                <div class="heading" id="home">
                   <h1>Joey Sea</h1>
-                  <h2>Front-End Web Developer</h2>
+                  <h2 id="message"></h2>
                </div>
                <div class="polaroid">
                   <img src="./assets/petolake.jpeg" alt="Joey overlooking Peto Lake in Banff, Alberta" class="headerImg"></img>
@@ -78,7 +78,7 @@
          <section class="about" id="about">
             <div class="wrapper">
                <h2>About Me</h2>
-               <div class="aboutContainer">
+               <div class="aboutContainer reveal">
                   <img src="./assets/joeysea.jpeg" alt="photo of Joey Sea">
                   <div class="aboutRight">
                      <p>
@@ -120,7 +120,7 @@
          <section class="skills" id="skills">
             <div class="wrapper">
                <h2>My Skills</h2>
-               <div class="skillsFlex">
+               <div class="skillsFlex reveal">
                   <ul>
                      <li>
                         <i class="fa-brands fa-html5" aria-hidden="true"></i>
@@ -176,7 +176,7 @@
             <div class="wrapper">
                <h2>My Projects</h2>
 
-               <div class="projectContainer">
+               <div class="projectContainer reveal">
                   <div class="projectPic">
                      <img src="./assets/smtm.png" alt="computer mockup photo of a laptop with $how Me The Money home page displayed">
                   </div>
@@ -193,12 +193,12 @@
                         <li>Rest API</li>
                      </ul>
                      <div class="projectText">
-                        <p>Through pair programming with Karleen Estanislao, we created and designed an interactive, up-to-date currency exchange app using two RESTful APIs.</p>
+                        <p>Through pair programming with<a href="https://www.karleene.com/">Karleen Estanislao</a>, we created and designed an interactive, up-to-date currency exchange app using two RESTful APIs.</p>
                      </div>
                   </div>
                </div>
                
-               <div class="projectContainer">
+               <div class="projectContainer reveal">
                   <div class="projectPic">
                      <img src="./assets/bo.png" alt="computer mockup photo of a laptop with Bar One home page displayed">
                   </div>
@@ -219,7 +219,7 @@
                   </div>
                </div>
 
-               <div class="projectContainer">
+               <div class="projectContainer reveal">
                   <div class="projectPic">
                      <img src="./assets/shutter.png" alt="computer mockup photo of a laptop with Shutter home page displayed">
                   </div>
@@ -248,7 +248,7 @@
                <p>Here are some of my watercolour paintings and calligraphy! <br> Feel free to browse my <a href="https://www.etsy.com/ca/shop/MissArtsea">Etsy shop</a> and follow me on <a href="https://www.instagram.com/missartsea/?hl=en">Instagram!</a></p>
                <br>
             
-               <div class="galleryImgs">
+               <div class="galleryImgs reveal">
                   <img src="./assets/bunny.jpg" alt="watercolour Easter bunny wearing a floral crown">
                   <img src="./assets/springcards.jpg" alt="3 watercolour cards with spring flowers">
                   <img src="./assets/cat.jpg" alt="watercolour painting of a cat named Lucy">
@@ -269,7 +269,7 @@
       <!-- === Footer Section === -->
       <footer id="contact">
          <div class="wrapper">
-            <div class="formContainer">
+            <div class="formContainer reveal">
                <form action="mailto:joey.c.sea@gmail.com" method="POST" data-netlify="true">
                   <h2>Let's Connect!</h2>
                   <p>Thank you for stopping by. Feel free to message and I will be happy to chat!</p>

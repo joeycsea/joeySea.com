@@ -46,6 +46,18 @@ a {
    left: 0;
 }
 
+.reveal {
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: 1s all ease;
+}
+
+.reveal.activee {
+   transform: translateY(0);
+   opacity: 1;
+}
+
 // Nav styles
 .mainNav {
    display: flex;
@@ -117,6 +129,17 @@ header {
    background-image: linear-gradient($second, $second, $first);
 }
 
+// Typewriter Animation
+span {
+   animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+
 .headerFlex {
    display: flex;
    flex-direction: row;
@@ -132,16 +155,6 @@ header {
    padding: 30px;
    animation: pulse 2s ease-in-out infinite;
    color: $seventh;
-}
-
-.fa-chevron-up {
-   position: relative;
-   bottom: -450px;
-   right: -250px;
-   font-size: 2rem;
-   padding: 30px;
-   animation: pulse 2s ease-in-out infinite;
-   color: $sixth;  
 }
 
 @keyframes pulse {
@@ -198,7 +211,7 @@ header {
 
 .headerImg {
    height: auto;
-   width: 550px;
+   width: 500px;
    padding: 20px 20px 120px 20px;
    border-radius: 10px;
    opacity: 95%;
