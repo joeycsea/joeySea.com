@@ -6,6 +6,100 @@
    }
 }
 
+@media (max-width: 1155px) {
+   .headerFlex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 180px;
+   }
+   
+   .headerImg {
+      width: 450px;
+   }
+   
+   .polaroid {
+      top: 4.5rem;
+      right: -1rem;
+   }
+
+   .fa-chevron-down {
+      top: 10vh;
+   }
+}
+
+@media (max-width: 830px) {
+   .about .gallery, .projects, .skills {
+         padding: 50px 10px;
+      }
+
+   .aboutContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+         width: 40%;
+      }
+   }
+
+   .aboutRight {
+      width: 100%;
+      padding-top: 30px;
+      p {
+         padding-left: 0;
+      }
+      li {
+         margin: 20px;
+      }
+      i {
+         padding-left: 0;
+      }
+   }
+
+   .skillsFlex {
+      p {
+         font-size: 1rem;
+      }
+      i {
+         font-size: 2.3rem;
+      }
+   }
+
+   .projectPic {
+      width: 60%;
+   }
+
+   .projectContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+   .projectWords {
+      margin-top: 50px;
+      width: 100%;
+      margin-left: 0;
+   }
+
+   .gallery img {
+      width: 150px;
+      margin: 10px;
+   }
+
+   .formContainer {
+      padding: 50px;
+   }
+
+   form {
+      width: 100%;
+   }
+
+   button {
+      width: 100%;
+      
+   }
+}
+
 
 @media (max-width: 750px) {
    .joeySeaNav {
@@ -48,10 +142,13 @@
       li {
          padding: 10px;
       }
+      li:first-child {
+         padding-top: 50px;
+      }
       i {
          cursor: pointer;
          display: inline-block;
-         padding: 0 30px;
+         padding: 0 20px;
       }
    }
    
@@ -66,11 +163,85 @@
       text-transform: lowercase;
       font-weight: 500;
       font-size: 0.9rem;
-      transition: 0.3s;
+      transition: all 0.3s;
       color: $third;
+      
    }
 
    ul.active a:hover {
       color: $seventh;
    }
+}
+
+@media (max-width: 625px) {
+   .projectSkills {
+      flex-wrap: wrap;
+   }
+
+   .projectPic {
+      width: 90%;
+   }
+
+   .socials i {
+      font-size: 3rem;
+      padding: 0;
+   }
+}
+
+@media (max-width: 540px) {
+   h2 {
+      font-size: 2.5rem;
+   }
+
+   p {
+      font-size: 0.8rem;
+   }
+
+   .aboutContainer img {
+      width: 65%;
+   }
+
+   .headerImg  {
+      width: 350px;
+      right: 0rem;
+      padding: 10px 10px 90px 10px;
+   }
+
+   .polaroid {
+      right: 0rem;
+   }
+
+   .socials {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
+      i {
+         font-size: 2rem;
+         padding: 0;
+      }
+      ul {
+         padding: 0;
+         margin: 0;
+      }
+   }
+
+   .formTop {
+   display: flex;
+   flex-direction: column;
+   }
+
+   input {
+      width: 100%;
+   }
+
+   input[type="text"] {
+   margin-right: 0;
+   }
+
+   input[type="email"] {
+      margin-left: 0;
+   }
+
 }

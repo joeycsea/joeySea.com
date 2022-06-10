@@ -371,7 +371,7 @@ a {
   position: relative;
 }
 
-a::before {
+.mainNav a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -383,12 +383,12 @@ a::before {
   transition: width 0.25s ease-out;
 }
 
-a:hover::before {
+.mainNav a:hover::before {
   width: 100%;
 }
 
-a:hover,
-a:focus {
+.mainNav a:hover,
+.mainNav a:focus {
   color: #8b6c78;
 }
 
@@ -553,6 +553,7 @@ header {
 
 .about {
   background-color: #f2f1f6;
+  background-size: cover;
   padding: 100px 0;
 }
 .about h2 {
@@ -574,7 +575,7 @@ header {
 
 .aboutContainer img {
   width: 30%;
-  border-radius: 10px;
+  border-radius: 50px;
   opacity: 95%;
 }
 
@@ -614,12 +615,7 @@ header {
 .aboutRight i {
   font-size: 2rem;
   padding-left: 75px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f4bbc2), to(#dad9e1));
-  background: linear-gradient(to bottom, #f4bbc2 0%, #dad9e1 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d0a8b1;
 }
 
 .skills {
@@ -650,7 +646,7 @@ header {
 }
 
 .skillsFlex i {
-  font-size: 3rem;
+  font-size: 2.75rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f4bbc2), to(#dad9e1));
   background: linear-gradient(to bottom, #f4bbc2 0%, #dad9e1 100%);
   -webkit-background-clip: text;
@@ -689,7 +685,7 @@ header {
   margin-bottom: 35px;
 }
 
-.projectTwo, .projectOne, .assignmentOne {
+.projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,9 +749,11 @@ header {
 
 .projectSkills li {
   font-size: 0.9rem;
+  font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 15px;
+  color: #f2f1f6;
 }
 
 .gallery {
@@ -795,9 +793,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -807,7 +805,8 @@ header {
 }
 
 #contact {
-  background-color: #f2f1f6;
+  background-image: url("../assets/beigeBackground.jpg");
+  background-size: contain;
   padding-top: 60px;
 }
 
@@ -820,7 +819,7 @@ header {
   background: #d0a8b1;
   padding: 20px 0;
   margin-bottom: 60px;
-  border-radius: 30px;
+  border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,6 +829,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.formContainer p {
+  background: #d0a8b1;
+  font-size: 0.9rem;
 }
 
 form {
@@ -945,6 +948,116 @@ footer p {
         flex-wrap: wrap;
   }
 }
+@media (max-width: 1155px) {
+  .headerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 180px;
+  }
+
+  .headerImg {
+    width: 450px;
+  }
+
+  .polaroid {
+    top: 4.5rem;
+    right: -1rem;
+  }
+
+  .fa-chevron-down {
+    top: 10vh;
+  }
+}
+@media (max-width: 830px) {
+  .about .gallery, .projects, .skills {
+    padding: 50px 10px;
+  }
+
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutContainer img {
+    width: 40%;
+  }
+
+  .aboutRight {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .aboutRight p {
+    padding-left: 0;
+  }
+  .aboutRight li {
+    margin: 20px;
+  }
+  .aboutRight i {
+    padding-left: 0;
+  }
+
+  .skillsFlex p {
+    font-size: 1rem;
+  }
+  .skillsFlex i {
+    font-size: 2.3rem;
+  }
+
+  .projectPic {
+    width: 60%;
+  }
+
+  .projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .projectWords {
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gallery img {
+    width: 150px;
+    margin: 10px;
+  }
+
+  .formContainer {
+    padding: 50px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
 @media (max-width: 750px) {
   .joeySeaNav {
     padding-left: 30px;
@@ -998,10 +1111,13 @@ footer p {
   .mobileNav li {
     padding: 10px;
   }
+  .mobileNav li:first-child {
+    padding-top: 50px;
+  }
   .mobileNav i {
     cursor: pointer;
     display: inline-block;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   ul.active {
@@ -1016,12 +1132,90 @@ footer p {
     text-transform: lowercase;
     font-weight: 500;
     font-size: 0.9rem;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     color: #c39ca5;
   }
 
   ul.active a:hover {
     color: #8b6c78;
+  }
+}
+@media (max-width: 625px) {
+  .projectSkills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .projectPic {
+    width: 90%;
+  }
+
+  .socials i {
+    font-size: 3rem;
+    padding: 0;
+  }
+}
+@media (max-width: 540px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .aboutContainer img {
+    width: 65%;
+  }
+
+  .headerImg {
+    width: 350px;
+    right: 0rem;
+    padding: 10px 10px 90px 10px;
+  }
+
+  .polaroid {
+    right: 0rem;
+  }
+
+  .socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .socials i {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .socials ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .formTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input[type=text] {
+    margin-right: 0;
+  }
+
+  input[type=email] {
+    margin-left: 0;
   }
 }

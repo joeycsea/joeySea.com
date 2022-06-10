@@ -71,7 +71,7 @@ a {
    position:relative;
 }
 
-a::before {
+.mainNav a::before {
    content: "";
    position: absolute;
    left: 0;
@@ -82,12 +82,12 @@ a::before {
    transition: width 0.25s ease-out;
 }
 
-a:hover::before {
+.mainNav a:hover::before {
    width: 100%;
 }
 
-a:hover,
-a:focus {
+.mainNav a:hover,
+.mainNav a:focus {
    color: $seventh;
 }
 
@@ -205,6 +205,9 @@ header {
 // About styles
 .about {
    background-color: $sixth;
+
+   // opacity: 0.8;
+   background-size: cover;
    padding: 100px 0;
    h2 {
       padding-bottom: 50px;
@@ -220,7 +223,7 @@ header {
 
 .aboutContainer img {
    width: 30%;
-   border-radius: 10px;
+   border-radius: 50px;
    opacity: 95%;
 }
 
@@ -255,13 +258,7 @@ header {
 .aboutRight i {
    font-size: 2rem;
    padding-left: 75px;
-   background:-moz-linear-gradient(top, $first 0%, $seventh 100%); 
-   background: -webkit-linear-gradient(top, $first 0%,$seventh 100%); 
-   background: linear-gradient(to bottom, $first 0%,$fourth 100%);
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color:transparent;
+   color: $second;
 }
 
 //  Skills styles
@@ -288,7 +285,7 @@ header {
 }
 
 .skillsFlex i {
-   font-size: 3rem;
+   font-size: 2.75rem;
    background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
    background: -webkit-linear-gradient(top, $first 0%,$fourth 100%); 
    background: linear-gradient(to bottom, $first 0%,$fourth 100%);
@@ -328,7 +325,7 @@ header {
    margin-bottom: 35px;
 }
 
-.projectTwo, .projectOne, .assignmentOne {
+.projectContainer {
    display: flex;
    padding: 50px 10px;
 }
@@ -384,9 +381,11 @@ header {
 
 .projectSkills li {
    font-size: 0.9rem;
+   font-weight: 500;
    letter-spacing: 1px;
    text-transform: uppercase;
    margin: 15px;
+   color: $sixth;
 }
 
 
@@ -424,7 +423,7 @@ header {
 
 .galleryImgs {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    align-items: center;
    flex-wrap: wrap;
    border-radius: 10px;
@@ -432,7 +431,8 @@ header {
 
 // Contact styles
 #contact {
-   background-color: $sixth;
+   background-image: url("../assets/beigeBackground.jpg");
+   background-size: contain;
    padding-top: 60px;
 }
 
@@ -445,10 +445,14 @@ header {
    background: $second;
    padding: 20px 0;
    margin-bottom: 60px;
-   border-radius: 30px;
+   border-radius: 50px;
    display: flex;
    justify-content: center;
    align-items: center;
+   p {
+      background: $second;
+      font-size: 0.9rem;
+   }
 }
 
 form {
@@ -512,6 +516,8 @@ button:hover,
 button:focus {
    background-color: $seventh;
 }
+
+// Footer styles
 
 .socials {
    background-color: $fifth;
