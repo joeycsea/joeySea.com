@@ -195,6 +195,7 @@
 @media (max-width: 540px) {
    h1 {
       font-size: 3.5rem;
+      letter-spacing: 5px;
    }
    
    .headerFlex h2 {
@@ -225,25 +226,42 @@
       right: 0rem;
    }
 
+   
    .aboutContainer img {
       width: 65%;
    }
-
-   .aboutRight p{
+   
+   .aboutRight p {
       font-size: 0.8rem;
    }
-
+   
    .skillsFlex li {
       margin: 20px 10px;
+   }
+   
+   .projectContainer {
+      padding: 20px 10px;
+   }
+
+   .projects a {
+      padding: 0;
    }
 
    .projects h3 {
       font-size: 1.8rem;
    }
 
+   .projectSkills li {
+      margin: 5px 15px;
+   }
+
+   .projectText p {
+      margin-top: 20px;
+   }
+
    .gallery img {
       width: 130px;
-      margin: 5px;
+      margin: 8px;
    }
 
    .socials {
