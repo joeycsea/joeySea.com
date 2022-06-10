@@ -8,17 +8,18 @@ html {
 h1, h2, h3 {
    font-family: $titleFont;
    font-weight: 700;
-   letter-spacing: 2px;
    text-transform: lowercase;
    }
 
 h1 {
    font-size: 4.5rem;
+   letter-spacing: 8px;
 }
 
 h2 {
    color: white;
    font-size: 3rem;
+   letter-spacing: 3px;
 }
 
 p, a, li {

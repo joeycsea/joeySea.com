@@ -4,9 +4,7 @@
    .aboutRight ul {
       flex-wrap: wrap;
    }
-}
 
-@media (max-width: 1155px) {
    .headerFlex {
       flex-direction: column;
       justify-content: center;
@@ -15,17 +13,20 @@
    }
    
    .headerImg {
-      width: 400px;
+      width: 375px;
    }
    
    .polaroid {
       top: 4rem;
       right: -1rem;
    }
-
+   
    .fa-chevron-down {
       top: 10vh;
    }
+}
+
+@media (max-width: 1155px) {
 
    .gallery {
       padding: 75px 0;
@@ -107,7 +108,8 @@
 
 @media (max-width: 750px) {
    .joeySeaNav {
-      padding-left: 30px;
+      padding-left: 25px;
+      font-size: 1.6rem;
    }
 
    .mainNav {
@@ -123,20 +125,19 @@
       top: -20px;
       width: 100%;
       border-radius: 0;
-      padding: 10px;
+      padding: 5px;
+      margin-top: 15px;
       background: $sixth;
       color: $seventh;
-      margin-top: 15px;
-      text-align: left;
    }
 
    .mobileNav {
       display: flex;
       flex-direction: column;
+      background-color: $sixth;
       position: fixed;
       width: 100%;
       text-align: center;
-      background-color: $sixth;
       z-index: 100;
       text-align: center;
       color: $seventh;
@@ -162,14 +163,13 @@
    }
 
    ul.active a {
-      display: inline-block;
+      display: block;
       padding: 10px;
       text-transform: lowercase;
       font-weight: 500;
       font-size: 0.9rem;
       transition: all 0.3s;
       color: $third;
-      
    }
 
    ul.active a:hover {

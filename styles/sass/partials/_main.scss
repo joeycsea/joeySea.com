@@ -50,11 +50,12 @@ a {
 .mainNav {
    display: flex;
    justify-content: center;
-   padding: 5px 0;
+   padding: 8px 0;
    background: $sixth;
    position: fixed;
    width: 100%;
    z-index: 50;
+   letter-spacing: 1px;
 }
 
 .mainNav a {
@@ -96,6 +97,7 @@ a {
    text-shadow: 2px 2px 2px $fourth;
    font-size: 1.9rem;
    font-weight: 700;
+   letter-spacing: 1.5px;
    padding: 12px;
    color: $seventh;
 }

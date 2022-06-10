@@ -277,17 +277,18 @@ html {
 h1, h2, h3 {
   font-family: "Cardo", serif;
   font-weight: 700;
-  letter-spacing: 2px;
   text-transform: lowercase;
 }
 
 h1 {
   font-size: 4.5rem;
+  letter-spacing: 8px;
 }
 
 h2 {
   color: white;
   font-size: 3rem;
+  letter-spacing: 3px;
 }
 
 p, a, li {
@@ -350,11 +351,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px 0;
+  padding: 8px 0;
   background: #f2f1f6;
   position: fixed;
   width: 100%;
   z-index: 50;
+  letter-spacing: 1px;
 }
 
 .mainNav a {
@@ -398,6 +400,7 @@ a {
   text-shadow: 2px 2px 2px #dad9e1;
   font-size: 1.9rem;
   font-weight: 700;
+  letter-spacing: 1.5px;
   padding: 12px;
   color: #8b6c78;
 }
@@ -948,8 +951,7 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-@media (max-width: 1155px) {
+
   .headerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -965,7 +967,7 @@ footer p {
   }
 
   .headerImg {
-    width: 400px;
+    width: 375px;
   }
 
   .polaroid {
@@ -976,7 +978,8 @@ footer p {
   .fa-chevron-down {
     top: 10vh;
   }
-
+}
+@media (max-width: 1155px) {
   .gallery {
     padding: 75px 0;
   }
@@ -1065,7 +1068,8 @@ footer p {
 }
 @media (max-width: 750px) {
   .joeySeaNav {
-    padding-left: 30px;
+    padding-left: 25px;
+    font-size: 1.6rem;
   }
 
   .mainNav {
@@ -1087,11 +1091,10 @@ footer p {
     top: -20px;
     width: 100%;
     border-radius: 0;
-    padding: 10px;
+    padding: 5px;
+    margin-top: 15px;
     background: #f2f1f6;
     color: #8b6c78;
-    margin-top: 15px;
-    text-align: left;
   }
 
   .mobileNav {
@@ -1102,10 +1105,10 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-color: #f2f1f6;
     position: fixed;
     width: 100%;
     text-align: center;
-    background-color: #f2f1f6;
     z-index: 100;
     text-align: center;
     color: #8b6c78;
@@ -1132,7 +1135,7 @@ footer p {
   }
 
   ul.active a {
-    display: inline-block;
+    display: block;
     padding: 10px;
     text-transform: lowercase;
     font-weight: 500;
