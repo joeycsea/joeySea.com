@@ -130,9 +130,9 @@ span {
 }
 
 @keyframes blinker{
-  50%{
-    opacity: 0;
-  }
+   50% {
+      opacity: 0;
+   }
 }
 
 // Header styles
@@ -232,29 +232,37 @@ header {
    display: flex;
    justify-content: center;
    align-items: flex-start;
-}
+   img {
+      width: 30%;
+      border-radius: 60px;
+      opacity: 95%;
 
-.aboutContainer img {
-   width: 30%;
-   border-radius: 50px;
-   opacity: 95%;
+   }
 }
 
 .aboutRight {
    width: 70%;
    color: white;
-}
-
-.aboutRight p {
-   color: $seventh;
-   padding-left: 75px;
-   letter-spacing: 1px;
-   font-size: 0.9rem;
-}
-
-.aboutRight a {
-   transition: 0.3s;
-   color: $second;
+   p {
+      color: $seventh;
+      padding-left: 75px;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+   }
+   a {
+      transition: 0.3s;
+      color: $third;
+   }
+   ul {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   }
+   i {
+      font-size: 2rem;
+      padding-left: 75px;
+      color: $second;
+   }
 }
 
 .about a:hover,
@@ -262,17 +270,6 @@ header {
    color: $first;
 }
 
-.aboutRight ul {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-}
-
-.aboutRight i {
-   font-size: 2rem;
-   padding-left: 75px;
-   color: $second;
-}
 
 //  Skills styles
 .skills  {
@@ -284,41 +281,41 @@ header {
    }
 }
 
-.skillsFlex ul {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   color: $fifth;
-   text-align: center;
+.skillsFlex {
+   ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: $fifth;
+      text-align: center;
+   }
+   li {
+      margin: 30px 40px;
+   }
+   i {
+      font-size: 2.3rem;
+      background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
+      background: -webkit-linear-gradient(top, $first 0%,$fourth 100%); 
+      background: linear-gradient(to bottom, $first 0%,$fourth 100%);
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+      transition: 0.1s;
+      text-align: center;
+   }
+   p {
+      font-size: 1.1rem;
+      padding-top: 10px;
+      color: white;
+   }
 }
 
-.skillsFlex li {
-   margin: 30px 40px;
-}
-
-.skillsFlex i {
-   font-size: 2.3rem;
-   background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
-   background: -webkit-linear-gradient(top, $first 0%,$fourth 100%); 
-   background: linear-gradient(to bottom, $first 0%,$fourth 100%);
-   -webkit-background-clip: text;
-   -moz-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color:transparent;
-   transition: 0.1s;
-   text-align: center;
-}
-
-   .skillsFlex i:hover,
-   .skillsFlex i:focus {
+.skillsFlex i:hover,
+.skillsFlex i:focus {
    color: $first;
 }
 
-.skillsFlex p {
-   font-size: 1.1rem;
-   padding-top: 10px;
-   color: white;
-}
 
 // Projects styles
 .projects  {
@@ -330,26 +327,19 @@ header {
    h2 {
       padding-bottom: 50px;
    }
-}
-
-.projects h3 {
-   text-transform: capitalize;
-   font-size: 2rem;
-   margin-bottom: 35px;
-}
-
-.projectContainer {
-   display: flex;
-   padding: 50px 10px;
-}
-
-.projects a {
-   margin: 10px;
-   padding: 20px;
-   padding-bottom: 3px;
-   transition: 0.3s;
-   font-weight: 500;
-   position: relative;
+   h3 {
+      text-transform: capitalize;
+      font-size: 2rem;
+      margin-bottom: 30px;
+   }
+   a {
+      margin: 10px;
+      padding: 20px;
+      padding-bottom: 3px;
+      transition: 0.3s;
+      font-weight: 500;
+      position: relative;
+   }
 }
 
 .projects a::before {
@@ -367,6 +357,12 @@ header {
    width: 100%;
 }
 
+.projectContainer {
+   display: flex;
+   padding: 50px 10px;
+}
+
+
 .projectLinks a:hover,
 .projectLinks a:focus {
    color: $eighth;
@@ -380,25 +376,23 @@ header {
 
 .projectPic {
    width: calc(40% - 20px);
-}
-
-.projectPic img {
-   border-radius: 20px;
-   border: 3px solid $sixth;
+   img {
+      border-radius: 20px;
+      border: 3px solid $sixth;
+   }
 }
 
 .projectSkills {
    display: flex;
    justify-content: center;
-}
-
-.projectSkills li {
-   font-size: 0.9rem;
-   font-weight: 500;
-   letter-spacing: 1px;
-   text-transform: uppercase;
-   margin: 15px;
-   color: $sixth;
+   li {
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 15px;
+      color: $sixth;
+   }
 }
 
 
@@ -406,32 +400,27 @@ header {
 .gallery  {
    background-color: $fourth;
    padding: 100px 50px;
-}
-
-.gallery h2 {
-   color: $seventh;
-   margin-bottom: 50px;
-}
-
-.gallery p,
-.gallery a {
-   color: $seventh;
-}
-
-.gallery a {
-   color: $third;
-   transition: 0.3s;
+   h2 {
+      color: $seventh;
+      margin-bottom: 50px;
+   }
+   p, a {
+      color: $seventh;
+   }
+   a {
+      color: $third;
+      transition: 0.3s;
+   }
+   img {
+      width: 300px;
+      flex-basis: 25%;
+      margin: 20px;
+   }
 }
 
 .gallery a:hover,
 .gallery a:focus {
    color: white;
-}
-
-.gallery img {
-   width: 300px;
-   flex-basis: 25%;
-   margin: 20px;
 }
 
 .galleryImgs {
@@ -448,11 +437,10 @@ header {
    background-size: cover;
    background-repeat: no-repeat;
    padding-top: 60px;
-}
-
-#contact h2 {
-   color: $seventh;
-   padding: 20px 0;
+   h2 {
+      color: $seventh;
+      padding: 20px 0;
+   }
 }
 
 .formContainer {
@@ -532,20 +520,18 @@ button:focus {
 }
 
 // Footer styles
-
 .socials {
    background-color: $fifth;
    color: white;
    display: flex;
    justify-content: center;
    padding: 20px 0;
-}
-
-.socials i {
-   color: $eighth;
-   font-size: 4rem;
-   margin: 30px;
-   transition: 0.3s;
+   i {
+      color: $eighth;
+      font-size: 4rem;
+      margin: 30px;
+      transition: 0.3s;
+   }
 }
 
 .socials i:hover,

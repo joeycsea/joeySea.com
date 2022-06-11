@@ -595,10 +595,9 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
 .aboutContainer img {
   width: 30%;
-  border-radius: 50px;
+  border-radius: 60px;
   opacity: 95%;
 }
 
@@ -606,25 +605,17 @@ header {
   width: 70%;
   color: white;
 }
-
 .aboutRight p {
   color: #8b6c78;
   padding-left: 75px;
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
-
 .aboutRight a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #d0a8b1;
+  color: #c39ca5;
 }
-
-.about a:hover,
-.about a:focus {
-  color: #f4bbc2;
-}
-
 .aboutRight ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,11 +625,15 @@ header {
           justify-content: center;
   text-align: center;
 }
-
 .aboutRight i {
   font-size: 2rem;
   padding-left: 75px;
   color: #d0a8b1;
+}
+
+.about a:hover,
+.about a:focus {
+  color: #f4bbc2;
 }
 
 .skills {
@@ -662,11 +657,9 @@ header {
   color: #5f5a6d;
   text-align: center;
 }
-
 .skillsFlex li {
   margin: 30px 40px;
 }
-
 .skillsFlex i {
   font-size: 2.3rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f4bbc2), to(#dad9e1));
@@ -679,16 +672,15 @@ header {
   transition: 0.1s;
   text-align: center;
 }
-
-.skillsFlex i:hover,
-.skillsFlex i:focus {
-  color: #f4bbc2;
-}
-
 .skillsFlex p {
   font-size: 1.1rem;
   padding-top: 10px;
   color: white;
+}
+
+.skillsFlex i:hover,
+.skillsFlex i:focus {
+  color: #f4bbc2;
 }
 
 .projects {
@@ -701,20 +693,11 @@ header {
 .projects h2 {
   padding-bottom: 50px;
 }
-
 .projects h3 {
   text-transform: capitalize;
   font-size: 2rem;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
-
-.projectContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 10px;
-}
-
 .projects a {
   margin: 10px;
   padding: 20px;
@@ -741,6 +724,13 @@ header {
   width: 100%;
 }
 
+.projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 10px;
+}
+
 .projectLinks a:hover,
 .projectLinks a:focus {
   color: #767184;
@@ -755,7 +745,6 @@ header {
 .projectPic {
   width: calc(40% - 20px);
 }
-
 .projectPic img {
   border-radius: 20px;
   border: 3px solid #f2f1f6;
@@ -769,7 +758,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .projectSkills li {
   font-size: 0.9rem;
   font-weight: 500;
@@ -783,33 +771,28 @@ header {
   background-color: #dad9e1;
   padding: 100px 50px;
 }
-
 .gallery h2 {
   color: #8b6c78;
   margin-bottom: 50px;
 }
-
-.gallery p,
-.gallery a {
+.gallery p, .gallery a {
   color: #8b6c78;
 }
-
 .gallery a {
   color: #c39ca5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
-.gallery a:hover,
-.gallery a:focus {
-  color: white;
-}
-
 .gallery img {
   width: 300px;
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   margin: 20px;
+}
+
+.gallery a:hover,
+.gallery a:focus {
+  color: white;
 }
 
 .galleryImgs {
@@ -833,7 +816,6 @@ header {
   background-repeat: no-repeat;
   padding-top: 60px;
 }
-
 #contact h2 {
   color: #8b6c78;
   padding: 20px 0;
@@ -944,7 +926,6 @@ button:focus {
           justify-content: center;
   padding: 20px 0;
 }
-
 .socials i {
   color: #767184;
   font-size: 4rem;
@@ -1007,7 +988,6 @@ footer p {
   .gallery {
     padding: 40px 0;
   }
-
   .gallery img {
     width: 140px;
     margin: 5px;
@@ -1233,11 +1213,10 @@ footer p {
     padding: 20px 10px;
   }
 
-  .projects a {
+  .project a {
     padding: 0;
   }
-
-  .projects h3 {
+  .project h3 {
     font-size: 1.8rem;
   }
 

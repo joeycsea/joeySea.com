@@ -32,12 +32,12 @@
 
    .gallery {
       padding: 40px 0;
+      img {
+         width: 140px;
+         margin: 5px;
+      }
    }
    
-   .gallery img {
-      width: 140px;
-      margin: 5px;
-   }
    .about, .projects, .skills, .gallery, .contact {
          padding: 50px 10px;
       }
@@ -175,8 +175,6 @@
       color: $seventh;
    }
 
- 
-   
    .headerFlex {
       padding-top: 90px;
    }
@@ -223,7 +221,6 @@
       font-size: 0.8rem;
    }
 
-
    .aboutContainer img {
       width: 65%;
    }
@@ -240,12 +237,13 @@
       padding: 20px 10px;
    }
 
-   .projects a {
-      padding: 0;
-   }
-
-   .projects h3 {
-      font-size: 1.8rem;
+   .project {
+      a {
+         padding: 0;
+      }
+      h3 {
+         font-size: 1.8rem;
+      }
    }
 
    .projectSkills li {
@@ -266,7 +264,6 @@
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
-
       i {
          font-size: 2rem;
          padding: 0;
@@ -299,7 +296,5 @@
    input[type="email"] {
       margin-left: 0;
    }
-
-
 }
 
