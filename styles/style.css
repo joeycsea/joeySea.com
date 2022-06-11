@@ -644,7 +644,6 @@ header {
 .skills {
   background-color: #5f5a6d;
   padding: 100px 0;
-  margin-top: -1rem;
 }
 .skills h2 {
   padding-bottom: 50px;
@@ -669,7 +668,7 @@ header {
 }
 
 .skillsFlex i {
-  font-size: 2.75rem;
+  font-size: 2.3rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f4bbc2), to(#dad9e1));
   background: linear-gradient(to bottom, #f4bbc2 0%, #dad9e1 100%);
   -webkit-background-clip: text;
@@ -687,7 +686,8 @@ header {
 }
 
 .skillsFlex p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  padding-top: 10px;
   color: white;
 }
 
@@ -786,7 +786,7 @@ header {
 
 .gallery h2 {
   color: #8b6c78;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .gallery p,
@@ -1013,7 +1013,7 @@ footer p {
     margin: 5px;
   }
 
-  .about, .projects, .skills {
+  .about, .projects, .skills, .gallery, .contact {
     padding: 50px 10px;
   }
 

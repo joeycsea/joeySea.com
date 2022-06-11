@@ -278,7 +278,6 @@ header {
 .skills  {
    background-color: $fifth;
    padding: 100px 0;
-   margin-top: -1rem;
    h2 {
       padding-bottom: 50px;
       text-align: center;
@@ -298,7 +297,7 @@ header {
 }
 
 .skillsFlex i {
-   font-size: 2.75rem;
+   font-size: 2.3rem;
    background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
    background: -webkit-linear-gradient(top, $first 0%,$fourth 100%); 
    background: linear-gradient(to bottom, $first 0%,$fourth 100%);
@@ -316,7 +315,8 @@ header {
 }
 
 .skillsFlex p {
-   font-size: 1.3rem;
+   font-size: 1.1rem;
+   padding-top: 10px;
    color: white;
 }
 
@@ -410,7 +410,7 @@ header {
 
 .gallery h2 {
    color: $seventh;
-   margin-bottom: 30px;
+   margin-bottom: 50px;
 }
 
 .gallery p,
