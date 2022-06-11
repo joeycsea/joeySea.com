@@ -17,7 +17,6 @@
    
    .polaroid {
       top: 3rem;
-      right: -1rem;
    }
    
    .fa-chevron-down {
@@ -26,10 +25,6 @@
 }
 
 @media (max-width: 920px) {
-   .fa-chevron-down {
-      display: none;
-   }
-
    .gallery {
       padding: 40px 0;
       img {
@@ -107,7 +102,7 @@
 
 @media (max-width: 800px) {
    .joeySeaNav {
-      padding-left: 25px;
+      padding-left: 20px;
       font-size: 1.6rem;
    }
 
@@ -176,7 +171,7 @@
    }
 
    .headerFlex {
-      padding-top: 90px;
+      padding-top: 105px;
    }
    
    .headerImg  {
@@ -184,14 +179,14 @@
       right: 0rem;
       padding: 10px 10px 90px 10px;
    }
-   
-   .polaroid {
-      top: 3rem;
-      right: 0rem;
+
+   .fa-chevron-down {
+      top: 5vh;
+      font-size: 1.2rem;
    }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 640px) {
    .projectSkills {
       flex-wrap: wrap;
    }

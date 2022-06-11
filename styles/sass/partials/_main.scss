@@ -151,7 +151,7 @@ header {
 .fa-chevron-down {
    position: relative;
    top: 20vh;
-   left: 0px;
+   left: -20px;
    font-size: 2rem;
    padding: 30px;
    animation: pulse 2s ease-in-out infinite;
@@ -509,6 +509,8 @@ button {
    border-radius: 10px;
    background: $fifth;
    color: $sixth;
+   letter-spacing: 1px;
+   font-weight: 300;
    transition: 0.3s;
    border: none;
    margin: 20px 0;
@@ -540,9 +542,10 @@ button:focus {
 }
 
 footer p {
-   color: white;
+   color: $sixth;
    text-align: center;
    background: $fifth;
    padding-bottom: 10px 0;
    font-size: 0.7rem;
+   letter-spacing: 1px;
 }
