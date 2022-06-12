@@ -699,8 +699,8 @@ header {
   margin-bottom: 30px;
 }
 .projects a {
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 10px;
   padding-bottom: 3px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -747,7 +747,6 @@ header {
 }
 .projectPic img {
   border-radius: 20px;
-  border: 3px solid #f2f1f6;
 }
 
 .projectSkills {
@@ -788,6 +787,7 @@ header {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   margin: 20px;
+  border-radius: 10px;
 }
 
 .gallery a:hover,
@@ -807,7 +807,6 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-radius: 10px;
 }
 
 #contact {
@@ -1193,6 +1192,10 @@ footer p {
 
   p {
     font-size: 0.8rem;
+  }
+
+  .fa-chevron-down {
+    display: none;
   }
 
   .aboutContainer img {
