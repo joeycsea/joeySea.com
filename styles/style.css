@@ -609,7 +609,7 @@ header {
   color: #8b6c78;
   padding-left: 75px;
   letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .aboutRight a {
   -webkit-transition: 0.3s;
@@ -626,7 +626,7 @@ header {
   text-align: center;
 }
 .aboutRight i {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-left: 75px;
   color: #d0a8b1;
 }
