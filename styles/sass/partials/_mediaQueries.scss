@@ -87,7 +87,9 @@
 
    .evenProjects .projectWords {
       order: 1;
-}
+      margin-right: 0;
+      margin-left: 0;
+   }
 
    .formContainer {
       padding: 50px;
@@ -268,9 +270,9 @@
       margin: 0;
       padding: 0;
       i {
-         font-size: 2rem;
+         font-size: 1.5rem;
          padding: 0;
-         margin: 20px;
+         margin: 15px;
       }
       ul {
          padding: 0;
