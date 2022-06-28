@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 920px) {
-   .about, .projects, .skills, .contact {
+   .about, .projects, .skills, .gallery .contact {
          padding: 50px 10px;
       }
 
@@ -98,7 +98,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
    .joeySeaNav {
       padding-left: 20px;
       font-size: 1.6rem;
@@ -181,6 +181,10 @@
    .fa-chevron-down {
       top: 5vh;
       font-size: 1.2rem;
+   }
+
+   .gallery {
+      padding: 50px 10px;
    }
 }
 
@@ -290,3 +294,11 @@
    }
 }
 
+
+@media (max-width: 400px) {
+   .skillsFlex li {
+         margin: 30px;
+      }
+
+
+}
