@@ -436,6 +436,36 @@ header {
    flex-wrap: wrap;
 }
 
+// Image Slider styles
+.slider-container {
+   width: 100%;
+   margin: 0 auto;
+   height: 40vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.slide {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+   transition: all 0.25s ease-in-out;
+}
+
+.btnContainer  {
+   display: flex;
+   justify-content: center;
+}
+
+.btnContainer button {
+   width: 10%;
+   margin: 10px;
+   text-align: center;
+}
+
+
 // Contact styles
 #contact {
    background-image: url("../assets/beigeBackground.jpg");
@@ -554,3 +584,8 @@ footer p {
    font-size: 0.7rem;
    letter-spacing: 1px;
 }
+
+
+
+
+

@@ -25,15 +25,7 @@
 }
 
 @media (max-width: 920px) {
-   .gallery {
-      padding: 40px 0;
-      img {
-         width: 140px;
-         margin: 5px;
-      }
-   }
-   
-   .about, .projects, .skills, .gallery, .contact {
+   .about, .projects, .skills, .contact {
          padding: 50px 10px;
       }
 
@@ -65,7 +57,7 @@
          font-size: 1rem;
       }
       i {
-         font-size: 2.3rem;
+         font-size: 2rem;
       }
    }
 
@@ -214,9 +206,9 @@
    }
    
    .headerFlex h2 {
-         font-size: 1.8rem;
-         padding-top: 25px;
-      }
+      font-size: 1.8rem;
+      padding-top: 25px;
+   }
 
    p {
       font-size: 0.8rem;
@@ -235,7 +227,7 @@
    }
    
    .skillsFlex li {
-      margin: 30px 25px;
+      margin: 30px 50px;
    }
    
    .projectContainer {
@@ -257,11 +249,6 @@
 
    .projectText p {
       margin-top: 20px;
-   }
-
-   .gallery img {
-      width: 130px;
-      margin: 8px;
    }
 
    .socials {
