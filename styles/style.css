@@ -820,7 +820,7 @@ header {
 .slider-container {
   width: 100%;
   margin: 0 auto;
-  height: 40vh;
+  height: 50vh;
   position: relative;
   overflow: hidden;
 }
