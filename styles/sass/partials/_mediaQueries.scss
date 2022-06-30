@@ -231,7 +231,7 @@
    }
    
    .skillsFlex li {
-      margin: 30px 50px;
+      margin: 30px 40px;
    }
    
    .projectContainer {
@@ -295,10 +295,17 @@
 }
 
 
-@media (max-width: 400px) {
-   .skillsFlex li {
-         margin: 30px;
+@media (max-width: 450px) {
+   .skillsFlex {
+    li {
+         margin: 25px 15px;
       }
-
-
+      
+      p {
+         font-size: 0.8rem;
+      }
+      i {
+         font-size: 1.9rem;
+      }
+}
 }

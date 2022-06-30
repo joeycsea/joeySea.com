@@ -597,8 +597,7 @@ header {
 }
 .aboutContainer img {
   width: 30%;
-  border-radius: 60px;
-  opacity: 95%;
+  border-radius: 50%;
 }
 
 .aboutRight {
@@ -625,8 +624,11 @@ header {
           justify-content: center;
   text-align: center;
 }
+.aboutRight li p {
+  font-size: 0.75rem;
+}
 .aboutRight i {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 75px;
   color: #d0a8b1;
 }
@@ -668,19 +670,12 @@ header {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
   text-align: center;
 }
 .skillsFlex p {
-  font-size: 1.1rem;
   padding-top: 10px;
   color: white;
-}
-
-.skillsFlex i:hover,
-.skillsFlex i:focus {
-  color: #f4bbc2;
+  letter-spacing: 1px;
 }
 
 .projects {
@@ -1251,7 +1246,7 @@ footer p {
   }
 
   .skillsFlex li {
-    margin: 30px 50px;
+    margin: 30px 40px;
   }
 
   .projectContainer {
@@ -1319,8 +1314,14 @@ footer p {
     margin-left: 0;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .skillsFlex li {
-    margin: 30px;
+    margin: 25px 15px;
+  }
+  .skillsFlex p {
+    font-size: 0.8rem;
+  }
+  .skillsFlex i {
+    font-size: 1.9rem;
   }
 }
