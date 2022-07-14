@@ -114,7 +114,7 @@ a {
    letter-spacing: 5px;
    padding: 12px;
    color: $seventh;
-   text-transform: uppercase;
+   text-transform: lowercase;
 }
 
 // Mobile Nav styles
@@ -351,6 +351,13 @@ header {
       font-weight: 500;
       font-size: 1rem;
    }
+}
+
+a.partnerLink {
+   font-family: $bodyFont;
+   text-transform: capitalize;
+   margin: 0;
+   font-weight: 300;
 }
 
 .projects a::before {

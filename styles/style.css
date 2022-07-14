@@ -422,7 +422,7 @@ a {
   letter-spacing: 5px;
   padding: 12px;
   color: #8b6c78;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .mobileNav {
@@ -721,6 +721,13 @@ header {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1rem;
+}
+
+a.partnerLink {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  margin: 0;
+  font-weight: 300;
 }
 
 .projects a::before {
