@@ -72,17 +72,18 @@ a {
 }
 
 .mainNav a {
+   font-family: $navFont;
    display: inline-block;
+   letter-spacing: 1px;
    padding: 15px;
    padding-bottom: 3px;
-   margin: 0 8px;
-   text-transform: lowercase;
-   font-weight: 500;
+   margin: 0 10px;
+   text-transform: uppercase;
+   font-weight: 300;
    font-size: 0.9rem;
    transition: 0.3s;
    color: $third;
-   display: inline-block;
-   position:relative;
+   position: relative;
 }
 
 .mainNav a::before {
@@ -106,13 +107,14 @@ a {
 }
 
 .joeySeaNav {
-   font-family: $titleFont;
+   font-family: $testFont;
    text-shadow: 2px 2px 2px $fourth;
-   font-size: 1.9rem;
+   font-size: 1.6rem;
    font-weight: 700;
-   letter-spacing: 1.5px;
+   letter-spacing: 5px;
    padding: 12px;
    color: $seventh;
+   text-transform: uppercase;
 }
 
 // Mobile Nav styles
@@ -190,9 +192,14 @@ header {
 }
 
 .headerFlex h2 {
-   font-size: 2rem;
+   font-size: 1.5rem;
    padding-top: 15px;
    text-align: left;
+}
+
+#message {
+   text-transform: lowercase;
+   letter-spacing: 6px;
 }
 
 .polaroid {
@@ -234,7 +241,7 @@ header {
    align-items: flex-start;
    img {
       width: 30%;
-      border-radius: 50%;
+      border-radius: 40px;
    }
 }
 
@@ -293,6 +300,12 @@ header {
    li {
       margin: 30px 40px;
    }
+   p {
+      font-family: $navFont;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.9rem;
+   }
    i {
       font-size: 2.3rem;
       background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
@@ -323,16 +336,20 @@ header {
    }
    h3 {
       text-transform: capitalize;
-      font-size: 2rem;
+      font-size: 1.9rem;
       margin-bottom: 30px;
+      letter-spacing: 7px;
    }
    a {
       margin: 5px;
       padding: 10px;
       padding-bottom: 3px;
       transition: 0.3s;
-      font-weight: 500;
       position: relative;
+      font-family: $navFont;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1rem;
    }
 }
 
@@ -379,10 +396,10 @@ header {
    display: flex;
    justify-content: center;
    li {
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 1px;
+      font-family: $navFont;
       text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.9rem;
       margin: 15px;
       color: $sixth;
    }
