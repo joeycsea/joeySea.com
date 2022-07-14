@@ -6,7 +6,7 @@ html {
 }
 
 h1, h2, h3 {
-   font-family: $testFont;
+   font-family: $titleFont;
    font-weight: 700;
    // text-transform: lowercase;
    letter-spacing: 3px;
@@ -14,16 +14,16 @@ h1, h2, h3 {
 
 h1 {
    font-size: 4.5rem;
-   letter-spacing: 20px;
-   text-transform: uppercase;
+   letter-spacing: 10px;
+   text-transform: lowercase;
    font-weight: bold;
 }
 
 h2 {
    color: white;
    font-size: 2.5rem;
-   letter-spacing: 12px;
-   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-transform: lowercase;
 }
 
 p, a, li {

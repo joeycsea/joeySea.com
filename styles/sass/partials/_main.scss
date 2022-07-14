@@ -107,7 +107,7 @@ a {
 }
 
 .joeySeaNav {
-   font-family: $testFont;
+   font-family: $titleFont;
    text-shadow: 2px 2px 2px $fourth;
    font-size: 1.6rem;
    font-weight: 700;
@@ -338,7 +338,7 @@ header {
       text-transform: capitalize;
       font-size: 1.9rem;
       margin-bottom: 30px;
-      letter-spacing: 7px;
+      letter-spacing: 1px;
    }
    a {
       margin: 5px;

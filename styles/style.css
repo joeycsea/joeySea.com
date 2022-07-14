@@ -275,23 +275,23 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: "Bigilla", sans-serif;
+  font-family: "Cardo", serif;
   font-weight: 700;
   letter-spacing: 3px;
 }
 
 h1 {
   font-size: 4.5rem;
-  letter-spacing: 20px;
-  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-transform: lowercase;
   font-weight: bold;
 }
 
 h2 {
   color: white;
   font-size: 2.5rem;
-  letter-spacing: 12px;
-  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: lowercase;
 }
 
 p, a, li {
@@ -415,7 +415,7 @@ a {
 }
 
 .joeySeaNav {
-  font-family: "Bigilla", sans-serif;
+  font-family: "Cardo", serif;
   text-shadow: 2px 2px 2px #dad9e1;
   font-size: 1.6rem;
   font-weight: 700;
@@ -708,7 +708,7 @@ header {
   text-transform: capitalize;
   font-size: 1.9rem;
   margin-bottom: 30px;
-  letter-spacing: 7px;
+  letter-spacing: 1px;
 }
 .projects a {
   margin: 5px;
@@ -1111,8 +1111,9 @@ footer p {
   .joeySeaNav {
     padding-left: 20px;
     font-size: 1.2rem;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 700;
+    text-transform: lowercase;
   }
   .mainNav {
     display: none;
@@ -1219,7 +1220,7 @@ footer p {
 @media (max-width: 540px) {
   h1 {
     font-size: 3.5rem;
-    letter-spacing: 9px;
+    letter-spacing: 3px;
   }
   .headerFlex h2 {
     font-size: 1.8rem;

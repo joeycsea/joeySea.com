@@ -102,8 +102,9 @@
    .joeySeaNav {
       padding-left: 20px;
       font-size: 1.2rem;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
       font-weight: 700;
+      text-transform: lowercase;
    }
 
    .mainNav {
@@ -210,7 +211,7 @@
 @media (max-width: 540px) {
    h1 {
       font-size: 3.5rem;
-      letter-spacing: 9px;
+      letter-spacing: 3px;
    }
    
    .headerFlex h2 {
