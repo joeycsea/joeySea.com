@@ -269,14 +269,24 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "BigillaBold";
+  src: url("../assets/fonts/bigilla-cdnfonts/Bigilla-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Bigilla";
+  src: url("../assets/fonts/bigilla-cdnfonts/Bigilla.otf");
+  font-weight: normal;
+}
 html {
   font-size: 125%;
   scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
-  font-family: "Cardo", serif;
-  font-weight: 700;
+  font-family: "Bigilla";
+  font-weight: bold;
   letter-spacing: 3px;
 }
 
@@ -289,8 +299,8 @@ h1 {
 
 h2 {
   color: white;
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+  font-size: 2.4rem;
+  letter-spacing: 10px;
   text-transform: lowercase;
 }
 
@@ -415,9 +425,9 @@ a {
 }
 
 .joeySeaNav {
-  font-family: "Cardo", serif;
+  font-family: "Bigilla";
   text-shadow: 2px 2px 2px #dad9e1;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 700;
   letter-spacing: 5px;
   padding: 12px;
@@ -463,9 +473,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -708,7 +718,7 @@ header {
   text-transform: capitalize;
   font-size: 1.8rem;
   margin-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 .projects a {
   margin: 5px;
@@ -720,7 +730,7 @@ header {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 a.partnerLink {
@@ -1121,10 +1131,9 @@ footer p {
 @media (max-width: 810px) {
   .joeySeaNav {
     padding-left: 20px;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    font-weight: 700;
-    text-transform: lowercase;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-weight: normal;
   }
   .mainNav {
     display: none;
@@ -1143,11 +1152,11 @@ footer p {
             align-items: center;
     top: -15px;
     width: 100%;
-    border-radius: 0;
-    padding: 5px;
+    padding: 2px;
     margin-top: 15px;
     background: #f2f1f6;
     color: #8b6c78;
+    opacity: 0.97;
   }
   .mobileNav {
     display: -webkit-box;
