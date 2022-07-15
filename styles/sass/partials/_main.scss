@@ -309,7 +309,8 @@ header {
       font-size: 0.9rem;
       padding-top: 10px;
       color: white;
-      letter-spacing: 1px;   }
+      letter-spacing: 1px;   
+   }
    i {
       font-size: 2.3rem;
       background:-moz-linear-gradient(top, $first 0%, $fourth 100%); 
@@ -403,6 +404,7 @@ a.partnerLink {
 .projectSkills {
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    li {
       font-family: $navFont;
       text-transform: uppercase;

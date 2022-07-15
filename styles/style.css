@@ -780,6 +780,8 @@ a.partnerLink {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projectSkills li {
   font-family: "Open Sans", sans-serif;
@@ -1214,10 +1216,6 @@ footer p {
   }
 }
 @media (max-width: 640px) {
-  .projectSkills {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .projectPic {
     width: 90%;
   }
@@ -1314,10 +1312,9 @@ footer p {
 }
 @media (max-width: 450px) {
   .skillsFlex p {
-    margin: 0 9px;
     font-size: 0.6rem;
   }
   .skillsFlex i {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }

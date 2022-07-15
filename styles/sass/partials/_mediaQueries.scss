@@ -194,10 +194,6 @@
 }
 
 @media (max-width: 640px) {
-   .projectSkills {
-      flex-wrap: wrap;
-   }
-
    .projectPic {
       width: 90%;
    }
@@ -312,11 +308,10 @@
 @media (max-width: 450px) {
    .skillsFlex {
       p {
-         margin: 0 9px;
          font-size: 0.6rem;
       }
       i {
-         font-size: 1.8rem;
+         font-size: 1.7rem;
       }
 }
 }
