@@ -54,10 +54,10 @@
 
    .skillsFlex {
       p {
-         font-size: 1rem;
+         font-size: 0.9rem;
       }
       i {
-         font-size: 2rem;
+         font-size: 1.9rem;
       }
    }
 
@@ -235,8 +235,13 @@
       font-size: 0.8rem;
    }
    
-   .skillsFlex li {
-      margin: 30px 40px;
+   .skillsFlex {
+      p {
+         font-size: 0.7rem;
+      }
+      i {
+         font-size: 1.8rem;
+      }
    }
    
    .projectContainer {
@@ -259,6 +264,10 @@
    .projectText p {
       margin-top: 20px;
    }
+
+   a.partnerLink {
+   font-size: 0.7rem;
+}
 
    .socials {
       display: flex;
@@ -302,15 +311,12 @@
 
 @media (max-width: 450px) {
    .skillsFlex {
-    li {
-         margin: 25px 15px;
-      }
-      
       p {
-         font-size: 0.8rem;
+         margin: 0 9px;
+         font-size: 0.6rem;
       }
       i {
-         font-size: 1.9rem;
+         font-size: 1.8rem;
       }
 }
 }
