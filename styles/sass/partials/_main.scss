@@ -107,7 +107,6 @@ a {
 }
 
 .joeySeaNav {
-   // font-family: $titleFont;
    font-family: 'Bigilla';
    text-shadow: 2px 2px 2px $fourth;
    font-size: 1.9rem;
@@ -336,8 +335,7 @@ header {
       padding-bottom: 50px;
    }
    h3 {
-      text-transform: capitalize;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       margin-bottom: 20px;
       letter-spacing: 5px;
    }
@@ -508,6 +506,9 @@ a.partnerLink {
    display: flex;
    justify-content: center;
    align-items: center;
+   h2 {
+      text-align: center;
+   }
    p {
       background: $second;
       font-size: 0.9rem;

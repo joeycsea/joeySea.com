@@ -2,6 +2,13 @@
 @media (max-width: 1220px) {
    .aboutRight ul {
       flex-wrap: wrap;
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .aboutRight li {
+      width: calc(100%/2);
+      padding-top: 20px;
    }
    
    .headerFlex {
@@ -43,9 +50,6 @@
       padding-top: 30px;
       p {
          padding-left: 0;
-      }
-      li {
-         margin: 20px 40px;
       }
       i {
          padding-left: 0;
@@ -206,7 +210,7 @@
 @media (max-width: 540px) {
    h1 {
       font-size: 3.5rem;
-      letter-spacing: 3px;
+      letter-spacing: 5px;
    }
    
    .headerFlex h2 {
@@ -226,8 +230,13 @@
       width: 65%;
    }
    
-   .aboutRight p {
-      font-size: 0.8rem;
+   .aboutRight li {
+      p {
+         font-size: 0.65rem;
+      }
+      i {
+         font-size: 1.6rem;
+      }
    }
    
    .skillsFlex {
@@ -236,6 +245,9 @@
       }
       i {
          font-size: 1.8rem;
+      }
+      li {
+      width: calc(100%/3);
       }
    }
    
