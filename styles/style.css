@@ -280,7 +280,7 @@ html {
   font-weight: normal;
 }
 body {
-  background-color: #dad9e1;
+  background-color: #f2f1f6;
 }
 
 html {
@@ -430,7 +430,7 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 3px;
-  padding: 10px;
+  padding: 12px;
   color: #6A535A;
 }
 
@@ -1166,7 +1166,7 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: -14px;
+    top: -13px;
     width: 100%;
     margin-top: 13px;
     background: #f2f1f6;
@@ -1223,12 +1223,12 @@ footer p {
     color: #6A535A;
   }
   .headerFlex {
-    padding-top: 135px;
+    padding-top: 128px;
   }
   .headerImg {
     width: 300px;
     right: 0rem;
-    padding: 10px 10px 90px 10px;
+    padding: 10px 10px 80px 10px;
   }
   .fa-chevron-down {
     top: 5vh;
