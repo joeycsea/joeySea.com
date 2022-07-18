@@ -63,7 +63,7 @@ a {
 .mainNav {
    display: flex;
    justify-content: center;
-   padding: 8px 0;
+   padding: 2px 0;
    background: $sixth;
    position: fixed;
    width: 100%;
@@ -109,12 +109,11 @@ a {
 .joeySeaNav {
    font-family: 'Bigilla';
    text-shadow: 2px 2px 2px $fourth;
-   font-size: 1.9rem;
+   font-size: 1.6rem;
    font-weight: bold;
-   letter-spacing: 5px;
-   padding: 12px;
+   letter-spacing: 3px;
+   padding: 10px;
    color: $seventh;
-   text-transform: lowercase;
 }
 
 // Mobile Nav styles
@@ -139,7 +138,7 @@ span {
 
 // Header styles
 header {
-   height: 100vh;
+   height: 95vh;
    background-image: linear-gradient($second, $second, $first);
 }
 
@@ -152,10 +151,8 @@ header {
 
 .fa-chevron-down {
    position: relative;
-   top: 20vh;
-   left: -20px;
+   top: 15vh;
    font-size: 2rem;
-   padding: 30px;
    animation: pulse 2s ease-in-out infinite;
    color: $seventh;
 }
@@ -198,8 +195,8 @@ header {
 }
 
 #message {
-   text-transform: lowercase;
-   letter-spacing: 6px;
+   // text-transform: lowercase;
+   letter-spacing: 5px;
 }
 
 .polaroid {
@@ -219,8 +216,8 @@ header {
 
 .headerImg {
    height: auto;
-   width: 500px;
-   padding: 20px 20px 120px 20px;
+   width: 400px;
+   padding: 15px 15px 105px 15px;
    border-radius: 10px;
 }
 
@@ -285,7 +282,7 @@ header {
    padding: 100px 0;
    h2 {
       padding-bottom: 50px;
-      text-align: center;
+      // text-align: center;
    }
 }
 
@@ -327,17 +324,22 @@ header {
 // Projects styles
 .projects  {
    background: $second;
-   padding: 100px 60px;
+   padding: 100px 0px;
+
    h2, h3, p, li  {
-      color: white;
+      color: $fifth;
    }
    h2 {
-      padding-bottom: 50px;
+      padding-bottom: 30px;
    }
    h3 {
-      font-size: 1.7rem;
+      font-size: 2rem;
       margin-bottom: 20px;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
+      // border-bottom: 1px solid $sixth;
+      text-align: center;
+      // text-decoration: underline 2px solid;
+
    }
    a {
       margin: 5px;
@@ -348,17 +350,25 @@ header {
       font-family: $navFont;
       text-transform: uppercase;
       font-weight: 500;
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
+      text-align: center;
+
    }
 }
 
 a.partnerLink {
    font-family: $bodyFont;
    text-transform: capitalize;
+   color: white;
    margin: 0;
    padding: 0;
    font-weight: 300;
    font-size: 0.9rem;
+}
+
+a.partnerLink:hover,
+a.partnerLink:focus {
+   color: $eighth;
 }
 
 .projects a::before {
@@ -368,7 +378,7 @@ a.partnerLink {
    bottom: 0;
    width: 0;
    height: 2px;
-   background-color: $sixth;
+   background-color: white;
    transition: width 0.25s ease-out;
 }
 
@@ -378,9 +388,14 @@ a.partnerLink {
 
 .projectContainer {
    display: flex;
-   padding: 50px 10px;
+   padding: 60px 0px;
 }
 
+.projectLinks {
+   text-align: center;
+   letter-spacing: 1px;
+   padding-bottom: 8px;
+}
 
 .projectLinks a:hover,
 .projectLinks a:focus {
@@ -388,13 +403,12 @@ a.partnerLink {
 }
 
 .projectWords {
-   margin-left: 50px;
-   width: calc(60% - 20px);
-   text-align: center;
+   margin-left: 70px;
+   width: calc(55% - 70px);
 }
 
 .projectPic {
-   width: calc(40% - 20px);
+   width: calc(45% - 50px);
    img {
       border-radius: 20px;
    }
@@ -409,6 +423,7 @@ a.partnerLink {
       text-transform: uppercase;
       font-weight: 300;
       font-size: 0.9rem;
+      letter-spacing: 1px;
       margin: 15px;
       color: $sixth;
    }
@@ -426,6 +441,7 @@ a.partnerLink {
 .gallery  {
    background-color: $fourth;
    padding: 100px 50px;
+   // text-align: center;
    h2 {
       color: $seventh;
       margin-bottom: 50px;
@@ -494,7 +510,7 @@ a.partnerLink {
    padding-top: 60px;
    h2 {
       color: $seventh;
-      padding: 20px 0;
+      padding: 30px 0;
    }
 }
 
@@ -585,7 +601,7 @@ button:focus {
    color: white;
    display: flex;
    justify-content: center;
-   padding: 20px 0;
+   padding: 15px 0;
    i {
       color: $eighth;
       font-size: 4rem;

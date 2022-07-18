@@ -30,9 +30,9 @@ function closeSideMenu() {
 //  Typewriter Animation
 // source: https://codepen.io/codefoxx/pen/xxdoyBJ
 
-let textArray = ["front-end web developer"];
+let textArray = ["Front-End Web Developer"];
 let textPosition = 0;
-let speed = 100;
+let speed = 110;
 
 typewriter = () => {
    document.querySelector('#message').innerHTML = textArray[0].substring(0, textPosition) + '<span>\u25AE</span>';

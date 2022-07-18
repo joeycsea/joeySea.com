@@ -78,7 +78,6 @@
    .projectWords {
       margin-top: 50px;
       width: 100%;
-      margin-left: 0;
    }
 
    .evenProjects .projectWords {
@@ -106,7 +105,7 @@
    .joeySeaNav {
       padding-left: 20px;
       font-size: 1.3rem;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       font-weight: normal;
       // text-transform: lowercase;
    }
@@ -121,10 +120,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      top: -15px;
+      top: -14px;
       width: 100%;
-      padding: 2px;
-      margin-top: 15px;
+      margin-top: 13px;
       background: $sixth;
       color: $seventh;
    }
@@ -201,6 +199,10 @@
       width: 90%;
    }
 
+   .projectWords {
+      margin-left: 0;
+   }
+
    .socials i {
       font-size: 3rem;
       padding: 0;
@@ -216,6 +218,10 @@
    .headerFlex h2 {
       font-size: 1.8rem;
       padding-top: 25px;
+   }
+
+   h2 {
+      font-size: 2.4rem;
    }
 
    p {
@@ -273,7 +279,7 @@
    }
 
    a.partnerLink {
-   font-size: 0.7rem;
+   font-size: 0.8rem;
 }
 
    .socials {
