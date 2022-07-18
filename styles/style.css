@@ -1152,10 +1152,10 @@ footer p {
 }
 @media (max-width: 810px) {
   .joeySeaNav {
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 1.3rem;
     letter-spacing: 2px;
-    font-weight: normal;
+    font-weight: bold;
   }
   .mainNav {
     display: none;
@@ -1261,21 +1261,27 @@ footer p {
     font-size: 3.5rem;
     letter-spacing: 5px;
   }
+  .headerFlex {
+    padding-top: 25px;
+  }
   .headerFlex h2 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     padding-top: 25px;
   }
   h2 {
     font-size: 2.4rem;
   }
-  p {
-    font-size: 0.8rem;
+  p, a, li {
+    font-size: 0.75rem;
   }
   .fa-chevron-down {
     display: none;
   }
   .aboutContainer img {
     width: 65%;
+  }
+  .aboutRight p {
+    font-size: 0.75rem;
   }
   .aboutRight li p {
     font-size: 0.65rem;
@@ -1331,6 +1337,10 @@ footer p {
   .formContainer {
     padding: 25px;
     border-radius: 15px;
+  }
+  .formContainer p {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
   }
   .formTop {
     display: -webkit-box;

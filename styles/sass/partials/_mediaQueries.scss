@@ -103,10 +103,10 @@
 
 @media (max-width: 810px) {
    .joeySeaNav {
-      padding-left: 20px;
+      padding-left: 15px;
       font-size: 1.3rem;
       letter-spacing: 2px;
-      font-weight: normal;
+      font-weight: bold;
       // text-transform: lowercase;
    }
 
@@ -214,9 +214,13 @@
       font-size: 3.5rem;
       letter-spacing: 5px;
    }
+
+   .headerFlex {
+      padding-top: 25px;
+   }
    
    .headerFlex h2 {
-      font-size: 1.8rem;
+      font-size: 1rem;
       padding-top: 25px;
    }
 
@@ -224,8 +228,8 @@
       font-size: 2.4rem;
    }
 
-   p {
-      font-size: 0.8rem;
+   p, a, li {
+      font-size: 0.75rem;
    }
 
    .fa-chevron-down {
@@ -234,6 +238,10 @@
    
    .aboutContainer img {
       width: 65%;
+   }
+
+   .aboutRight p {
+      font-size: 0.75rem;
    }
    
    .aboutRight li {
@@ -301,6 +309,10 @@
    .formContainer {
       padding: 25px;
       border-radius: 15px;
+      p {
+         font-size: 0.8rem;
+         padding-bottom: 10px;
+      }
    }
 
    .formTop {
