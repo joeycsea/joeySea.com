@@ -63,7 +63,7 @@ a {
 .mainNav {
    display: flex;
    justify-content: center;
-   padding: 2px 0;
+   padding: 4px 0;
    background: $sixth;
    position: fixed;
    width: 100%;
@@ -109,9 +109,9 @@ a {
 .joeySeaNav {
    font-family: 'Bigilla';
    text-shadow: 2px 2px 2px $fourth;
-   font-size: 1.6rem;
+   font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 3px;
+   letter-spacing: 2px;
    padding: 12px;
    color: $seventh;
 }
@@ -138,20 +138,22 @@ span {
 
 // Header styles
 header {
-   height: 95vh;
+   height: 100vh;
    background-image: linear-gradient($second, $second, $first);
+   display: flex;
+   flex-direction: center;
+   align-items: center
 }
 
 .headerFlex {
    display: flex;
-   flex-direction: row;
    justify-content: space-evenly;
-   align-items: flex-end;
+   align-items: center;
 }
 
 .fa-chevron-down {
    position: relative;
-   top: 15vh;
+   top: 20vh;
    font-size: 2rem;
    animation: pulse 2s ease-in-out infinite;
    color: $seventh;
@@ -202,7 +204,7 @@ header {
 .polaroid {
    height: fit-content;
    position: relative;
-   top: 8rem;
+   top: 2rem;
    right: -1rem;
    background-color: white;
    transform: scale(0.9, 0.9) rotate(7deg);
