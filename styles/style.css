@@ -291,11 +291,12 @@ html {
 h1, h2, h3 {
   font-family: "Bigilla";
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
 }
 
 h1 {
   font-size: 5rem;
+  letter-spacing: 7px;
 }
 
 h2 {
@@ -488,7 +489,7 @@ header {
 
 .fa-chevron-down {
   position: relative;
-  top: 20vh;
+  top: 10vh;
   font-size: 2rem;
   -webkit-animation: pulse 2s ease-in-out infinite;
           animation: pulse 2s ease-in-out infinite;
@@ -566,7 +567,7 @@ header {
 }
 
 #message {
-  letter-spacing: 5px;
+  letter-spacing: 8px;
 }
 
 .polaroid {
@@ -1229,7 +1230,7 @@ footer p {
     color: #6A535A;
   }
   .headerFlex {
-    padding-top: 128px;
+    padding-top: 100px;
   }
   .headerImg {
     width: 300px;
@@ -1367,5 +1368,8 @@ footer p {
   }
   .skillsFlex i {
     font-size: 1.7rem;
+  }
+  #message {
+    letter-spacing: 5px;
   }
 }

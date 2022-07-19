@@ -175,7 +175,7 @@
    }
 
    .headerFlex {
-      padding-top: 128px;
+      padding-top: 100px;
    }
    
    .headerImg  {
@@ -342,5 +342,8 @@
       i {
          font-size: 1.7rem;
       }
-}
+   }
+   #message {
+      letter-spacing: 5px;
+   }
 }
