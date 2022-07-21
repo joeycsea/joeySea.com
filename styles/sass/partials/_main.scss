@@ -328,9 +328,10 @@ header {
    background: $second;
    padding: 100px 0px;
 
-   h2, h3, p, li  {
-      color: $fifth;
+   h2, h3 {
+      color: white;
    }
+
    h2 {
       padding-bottom: 30px;
    }
@@ -341,8 +342,12 @@ header {
       // border-bottom: 1px solid $sixth;
       text-align: center;
       // text-decoration: underline 2px solid;
-
    }
+
+   p, li  {
+      color: $fifth;
+   }
+
    a {
       margin: 5px;
       padding: 10px;
@@ -361,7 +366,7 @@ header {
 a.partnerLink {
    font-family: $bodyFont;
    text-transform: capitalize;
-   color: white;
+   color: $eighth;
    margin: 0;
    padding: 0;
    font-weight: 300;
@@ -396,7 +401,9 @@ a.partnerLink:focus {
 .projectLinks {
    text-align: center;
    letter-spacing: 1px;
-   padding-bottom: 8px;
+   padding-bottom: 7px;
+   color: white;
+   border-bottom: 1px solid white;
 }
 
 .projectLinks a:hover,

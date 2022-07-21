@@ -710,8 +710,8 @@ header {
   background: #d0a8b1;
   padding: 100px 0px;
 }
-.projects h2, .projects h3, .projects p, .projects li {
-  color: #5f5a6d;
+.projects h2, .projects h3 {
+  color: white;
 }
 .projects h2 {
   padding-bottom: 30px;
@@ -721,6 +721,9 @@ header {
   margin-bottom: 20px;
   letter-spacing: 3px;
   text-align: center;
+}
+.projects p, .projects li {
+  color: #5f5a6d;
 }
 .projects a {
   margin: 5px;
@@ -738,7 +741,7 @@ header {
 a.partnerLink {
   font-family: "Montserrat", sans-serif;
   text-transform: capitalize;
-  color: white;
+  color: #767184;
   margin: 0;
   padding: 0;
   font-weight: 300;
@@ -776,7 +779,9 @@ a.partnerLink:focus {
 .projectLinks {
   text-align: center;
   letter-spacing: 1px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 .projectLinks a:hover,
@@ -1363,6 +1368,9 @@ footer p {
   }
 }
 @media (max-width: 450px) {
+  .headerFlex {
+    padding-top: 0px;
+  }
   .skillsFlex p {
     font-size: 0.6rem;
   }
