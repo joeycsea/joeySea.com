@@ -205,10 +205,11 @@
    }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 570px) {
    h1 {
       font-size: 3.5rem;
       letter-spacing: 5px;
+      text-align: center;
    }
    
    .headerFlex h2 {
