@@ -15,7 +15,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 175px;
    }
    
    .headerImg {
@@ -78,6 +77,7 @@
    .projectWords {
       margin-top: 50px;
       width: 100%;
+      margin-left:0px;
    }
 
    .evenProjects .projectWords {
@@ -173,10 +173,6 @@
    ul.active a:hover {
       color: $seventh;
    }
-
-   .headerFlex {
-      padding-top: 100px;
-   }
    
    .headerImg  {
       width: 300px;
@@ -213,10 +209,6 @@
    h1 {
       font-size: 3.5rem;
       letter-spacing: 5px;
-   }
-
-   .headerFlex {
-      padding-top: 25px;
    }
    
    .headerFlex h2 {
@@ -335,10 +327,6 @@
 
 
 @media (max-width: 450px) {
-
-   .headerFlex {
-      padding-top: 0px;
-   }
 
    .skillsFlex {
       p {
