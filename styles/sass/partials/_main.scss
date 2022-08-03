@@ -219,7 +219,7 @@ header {
 
 .headerImg {
    height: auto;
-   width: 400px;
+   width: 460px;
    padding: 15px 15px 105px 15px;
    border-radius: 10px;
 }
@@ -333,18 +333,19 @@ header {
 
 // Projects styles
 .projects  {
-   background: $second;
-   background-image: linear-gradient( $second, $third);
+   // background: $second;
+   // background-image: linear-gradient( $second, $third);
+   background-image: url("../assets/beigeBackground.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
    padding: 100px 0px;
-
-   h2, h3 {
-      color: white;
-   }
-
+   
    h2 {
-      padding-bottom: 30px;
+      color: $seventh;
+      padding-bottom: 50px;
    }
    h3 {
+      color: white;
       font-size: 2.5rem;
       margin-bottom: 20px;
       // letter-spacing: 3px;
@@ -404,7 +405,11 @@ a.partnerLink:focus {
 
 .projectContainer {
    display: flex;
-   padding: 60px 0px;
+   padding: 70px;
+   margin-bottom: 60px;
+   background-color: $second;
+   border-radius: 30px;
+   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.3);
 }
 
 .projectLinks {
@@ -456,7 +461,7 @@ a.partnerLink:focus {
 
 //  Gallery styles
 .gallery  {
-   background-color: $fourth;
+   background-color: $sixth;
    padding: 80px 50px;
    // text-align: center;
    h2 {
@@ -534,7 +539,7 @@ a.partnerLink:focus {
 .formContainer {
    background: $second;
    padding: 30px 0;
-   margin-bottom: 60px;
+   margin: 70px 0 90px 0;
    border-radius: 50px;
    display: flex;
    justify-content: center;
@@ -642,6 +647,7 @@ footer p {
    font-size: 0.7rem;
    letter-spacing: 1px;
 }
+
 
 
 

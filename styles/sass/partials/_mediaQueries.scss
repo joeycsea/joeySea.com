@@ -208,7 +208,7 @@
 @media (max-width: 570px) {
    h1 {
       font-size: 3.5rem;
-      letter-spacing: 5px;
+      // letter-spacing: 5px;
       text-align: center;
    }
    
@@ -259,15 +259,16 @@
    }
    
    .projectContainer {
-      padding: 20px 10px;
+      padding: 30px 25px;
    }
 
    .projects {
+      padding: 50px 0;
       a {
          padding: 0;
       }
-      .h3 {
-         font-size: 1.8rem;
+      h3 {
+         font-size: 2rem;
       }
    }
 
@@ -339,5 +340,8 @@
    }
    #message {
       letter-spacing: 5px;
+   }
+   footer p {
+      font-size: 0.5rem;
    }
 }

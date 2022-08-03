@@ -305,7 +305,7 @@ h2 {
 p, a, li {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  color: #5f5a6d;
+  color: #4f4b5b;
   line-height: 31px;
   font-size: 0.9rem;
 }
@@ -587,7 +587,7 @@ header {
 
 .headerImg {
   height: auto;
-  width: 400px;
+  width: 460px;
   padding: 15px 15px 105px 15px;
   border-radius: 10px;
 }
@@ -656,7 +656,7 @@ header {
 }
 
 .skills {
-  background-color: #5f5a6d;
+  background-color: #4f4b5b;
   padding: 100px 0;
 }
 .skills h2 {
@@ -672,7 +672,7 @@ header {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #5f5a6d;
+  color: #4f4b5b;
   text-align: center;
 }
 .skillsFlex li {
@@ -707,24 +707,23 @@ header {
 }
 
 .projects {
-  background: #d0a8b1;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0a8b1), to(#c39ca5));
-  background-image: linear-gradient(#d0a8b1, #c39ca5);
+  background-image: url("../assets/beigeBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 100px 0px;
 }
-.projects h2, .projects h3 {
-  color: white;
-}
 .projects h2 {
-  padding-bottom: 30px;
+  color: #715860;
+  padding-bottom: 50px;
 }
 .projects h3 {
+  color: white;
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 .projects p, .projects li {
-  color: #5f5a6d;
+  color: #4f4b5b;
 }
 .projects a {
   margin: 5px;
@@ -774,7 +773,12 @@ a.partnerLink:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 60px 0px;
+  padding: 70px;
+  margin-bottom: 60px;
+  background-color: #d0a8b1;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.3);
 }
 
 .projectLinks {
@@ -831,7 +835,7 @@ a.partnerLink:focus {
 }
 
 .gallery {
-  background-color: #dad9e1;
+  background-color: #f2f1f6;
   padding: 80px 50px;
 }
 .gallery h2 {
@@ -919,7 +923,7 @@ a.partnerLink:focus {
 .formContainer {
   background: #d0a8b1;
   padding: 30px 0;
-  margin-bottom: 60px;
+  margin: 70px 0 90px 0;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,7 +1004,7 @@ button {
   display: inline-block;
   padding: 10px 80px;
   border-radius: 10px;
-  background: #5f5a6d;
+  background: #4f4b5b;
   color: #f2f1f6;
   letter-spacing: 1px;
   font-weight: 300;
@@ -1018,7 +1022,7 @@ button:focus {
 }
 
 .socials {
-  background-color: #5f5a6d;
+  background-color: #4f4b5b;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1044,7 +1048,7 @@ button:focus {
 footer p {
   color: #f2f1f6;
   text-align: center;
-  background: #5f5a6d;
+  background: #4f4b5b;
   padding-bottom: 10px 0;
   font-size: 0.7rem;
   letter-spacing: 1px;
@@ -1265,7 +1269,6 @@ footer p {
 @media (max-width: 570px) {
   h1 {
     font-size: 3.5rem;
-    letter-spacing: 5px;
     text-align: center;
   }
   .headerFlex h2 {
@@ -1303,13 +1306,16 @@ footer p {
     width: 33.3333333333%;
   }
   .projectContainer {
-    padding: 20px 10px;
+    padding: 30px 25px;
+  }
+  .projects {
+    padding: 50px 0;
   }
   .projects a {
     padding: 0;
   }
-  .projects .h3 {
-    font-size: 1.8rem;
+  .projects h3 {
+    font-size: 2rem;
   }
   .projectSkills li {
     margin: 5px 15px;
@@ -1374,5 +1380,8 @@ footer p {
   }
   #message {
     letter-spacing: 5px;
+  }
+  footer p {
+    font-size: 0.5rem;
   }
 }
