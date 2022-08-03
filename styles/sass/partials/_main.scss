@@ -64,7 +64,7 @@ a {
    position: fixed;
    width: 100%;
    z-index: 50;
-   letter-spacing: 1px;
+   // letter-spacing: 1px;
 }
 
 .mainNav a {
@@ -107,7 +107,7 @@ a {
    text-shadow: 2px 2px 2px $fourth;
    font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 2px;
+   // letter-spacing: 2px;
    padding: 12px;
    color: $seventh;
 }
@@ -407,9 +407,13 @@ a.partnerLink:focus {
    display: flex;
    padding: 70px;
    margin-bottom: 60px;
-   background-color: $second;
+   background-color: $third;
    border-radius: 30px;
-   box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.3);
+   box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.3);
+}
+
+.projectContainer.evenProjects {
+   background-color: $second;
 }
 
 .projectLinks {
@@ -427,11 +431,11 @@ a.partnerLink:focus {
 
 .projectWords {
    margin-left: 70px;
-   width: calc(55% - 70px);
+   width: 50%;
 }
 
 .projectPic {
-   width: calc(45% - 50px);
+   width: 50%;
    img {
       border-radius: 20px;
    }
@@ -544,6 +548,7 @@ a.partnerLink:focus {
    display: flex;
    justify-content: center;
    align-items: center;
+   box-shadow: 0 0.2rem 1rem rgba(0,0,0,0.3);
    h2 {
       text-align: center;
    }
