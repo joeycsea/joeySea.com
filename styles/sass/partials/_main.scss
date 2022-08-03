@@ -16,7 +16,7 @@ img {
 
 .wrapper {
    max-width: 1200px;
-   width: 85%;
+   width: 80%;
    margin: 0 auto;
 }
 
@@ -132,6 +132,7 @@ span {
    }
 }
 
+
 // Header styles
 header {
    height: 100vh;
@@ -198,7 +199,7 @@ header {
 
 #message {
    // text-transform: lowercase;
-   letter-spacing: 8px;
+   letter-spacing: 6px;
 }
 
 .polaroid {
@@ -344,9 +345,9 @@ header {
       padding-bottom: 30px;
    }
    h3 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
-      letter-spacing: 3px;
+      // letter-spacing: 3px;
       // border-bottom: 1px solid $sixth;
       text-align: center;
       // text-decoration: underline 2px solid;

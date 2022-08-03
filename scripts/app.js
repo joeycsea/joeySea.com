@@ -5,7 +5,6 @@ const mobileNavButton = mobileNav[0].children[1];
 const mobileNavMenu = document.getElementsByClassName("mobileNav")
 const mobileNavSlideIn = mobileNavMenu[0].children[1];
 
-
 mobileNavButton.addEventListener('click', function() {
    mobileNavSlideIn.classList.toggle("active");
    mobileNavButton.classList.toggle('fa-bars');
@@ -90,15 +89,6 @@ prevBtn.addEventListener("click", function () {
 });
 
 function carousel() {
-  // working with slides
-//   if (counter === slides.length) {
-//     counter = 0;
-//   }
-//   if (counter < 0) {
-//     counter = slides.length - 1;
-//   }
-  // working with buttons
-
    if (counter < slides.length - 1) {
       nextBtn.style.display = "block";
    } else {

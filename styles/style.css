@@ -291,12 +291,10 @@ html {
 h1, h2, h3 {
   font-family: "Bigilla";
   font-weight: bold;
-  letter-spacing: 5px;
 }
 
 h1 {
-  font-size: 5.8rem;
-  letter-spacing: 5px;
+  font-size: 5.9rem;
 }
 
 h2 {
@@ -329,7 +327,7 @@ img {
 
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -407,7 +405,7 @@ a {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #6A535A;
+  background-color: #715860;
   -webkit-transition: width 0.25s ease-out;
   transition: width 0.25s ease-out;
 }
@@ -418,7 +416,7 @@ a {
 
 .mainNav a:hover,
 .mainNav a:focus {
-  color: #6A535A;
+  color: #715860;
 }
 
 .joeySeaNav {
@@ -428,7 +426,7 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
   padding: 12px;
-  color: #6A535A;
+  color: #715860;
 }
 
 .mobileNav {
@@ -490,7 +488,7 @@ header {
   font-size: 2rem;
   -webkit-animation: pulse 2s ease-in-out infinite;
           animation: pulse 2s ease-in-out infinite;
-  color: #6A535A;
+  color: #715860;
 }
 
 @-webkit-keyframes pulse {
@@ -516,7 +514,7 @@ header {
 }
 .heading {
   color: white;
-  text-shadow: 3px 5px 5px #6A535A;
+  text-shadow: 3px 5px 5px #715860;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,7 +562,7 @@ header {
 }
 
 #message {
-  letter-spacing: 8px;
+  letter-spacing: 6px;
 }
 
 .polaroid {
@@ -600,7 +598,7 @@ header {
 }
 .about h2 {
   padding-bottom: 50px;
-  color: #6A535A;
+  color: #715860;
 }
 
 .aboutContainer {
@@ -624,7 +622,7 @@ header {
   color: white;
 }
 .aboutRight p {
-  color: #6A535A;
+  color: #715860;
   padding-left: 75px;
   letter-spacing: 1px;
   font-size: 0.8rem;
@@ -721,9 +719,8 @@ header {
   padding-bottom: 30px;
 }
 .projects h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  letter-spacing: 3px;
   text-align: center;
 }
 .projects p, .projects li {
@@ -838,11 +835,11 @@ a.partnerLink:focus {
   padding: 80px 50px;
 }
 .gallery h2 {
-  color: #6A535A;
+  color: #715860;
   margin-bottom: 50px;
 }
 .gallery p, .gallery a {
-  color: #6A535A;
+  color: #715860;
 }
 .gallery a {
   color: #c39ca5;
@@ -915,7 +912,7 @@ a.partnerLink:focus {
   padding-top: 60px;
 }
 #contact h2 {
-  color: #6A535A;
+  color: #715860;
   padding: 30px 0;
 }
 
@@ -1016,7 +1013,7 @@ button {
 
 button:hover,
 button:focus {
-  background-color: #6A535A;
+  background-color: #715860;
   scale: 1.1;
 }
 
@@ -1188,7 +1185,7 @@ footer p {
     width: 100%;
     margin-top: 13px;
     background: #f2f1f6;
-    color: #6A535A;
+    color: #715860;
   }
   .mobileNav {
     display: -webkit-box;
@@ -1204,7 +1201,7 @@ footer p {
     text-align: center;
     z-index: 100;
     text-align: center;
-    color: #6A535A;
+    color: #715860;
   }
   .mobileNav ul {
     display: none;
@@ -1238,7 +1235,7 @@ footer p {
     font-family: "Open Sans", sans-serif;
   }
   ul.active a:hover {
-    color: #6A535A;
+    color: #715860;
   }
   .headerImg {
     width: 300px;
@@ -1308,10 +1305,10 @@ footer p {
   .projectContainer {
     padding: 20px 10px;
   }
-  .project a {
+  .projects a {
     padding: 0;
   }
-  .project h3 {
+  .projects .h3 {
     font-size: 1.8rem;
   }
   .projectSkills li {
